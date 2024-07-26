@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Center for Geospatial Research</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="research geography geographic information systems remote sensing drones" name="keywords">
+<meta content="Center for Geospatial Research" name="description">
+<meta content="Sergio Bernardes" name="author">
+
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- Icon Font Stylesheet -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Libraries Stylesheet -->
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Template Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Spinner Start -->
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+  <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status"> <span class="sr-only">Loading...</span> </div>
+</div>
+<!-- Spinner End --> 
+
+<!-- Navbar & Hero Start -->
+<div class="container-fluid position-relative p-0"> 
+  
+  <!-- Start navigation bar -->
+  <div id="nav-placeholder"></div>
+  <!-- End navigation bar --> 
+  
+</div>
+<!-- Navbar End --> 
+
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb">
+  <div class="container text-center py-5" style="max-width: 900px;">
+    <h3 class="text-white display-5 mb-4 wow fadeInDown" data-wow-delay="0.1s">Drone Services</h3>
+  </div>
+</div>
+<!-- Header End --> 
+
+<!-- Information Request Start -->
+<div class="container-fluid py-3">
+  <div class="container py-1">
+    <div class="row g-5 align-items-center">
+      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2">
+        <div class="section-title text-start">
+          <h5 class="sub-title pe-3 mb-0">UAV-Based Data Collections</h5>
+          <h1 class="display-6 mb-4">Drone-Based Data Collections</h1>
+          <p class="mb-4">CGR is equipped with a variety of drones and remote sensors that can be requested and tasked to collect data in support of investigations conducted by other groups. Use this form to provide information on your drone data collection needs and to request information on system availability and costs.&nbsp;&nbsp; </p>
+          <div class="row g-4">
+            <div class="col-sm-6">
+              <div class="d-flex flex-column h-100">
+                <div class="mb-4">
+                  <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> RGB imaging for mosaicking and 3D reconstruction</h5>
+                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et deserunt qui cupiditate veritatis enim ducimus.</p>
+                </div>
+                <div class="mb-4">
+                  <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Multispectral imaging</h5>
+                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et deserunt qui cupiditate veritatis enim ducimus.</p>
+                </div>
+                <div class="text-start mb-4"> <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a> </div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="video h-100"> <img src="img/video-img.jpg" class="img-fluid rounded w-100 h-100" style="object-fit: cover;" alt="">
+                <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal"> <span></span> </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
+        <div class="appointment-form bg-light rounded p-5">
+          <p class="fs-2 text-uppercase text-primary">Get In Touch</p>
+          <h1 class="display-6 mb-1">Request UAV Service</h1>
+          <form>
+            <div class="row gy-2 gx-4">
+              <div class="col-xl-20">
+                <input type="text" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Name*">
+              </div>
+              <div class="col-xl-15">
+                <input type="email" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Email*">
+              </div>
+              <div class="col-xl-15">
+                <input type="organization" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Organization*">
+              </div>
+              <div class="col-xl-6">
+                <input type="phone" class="form-control py-3 border-primary bg-transparent" placeholder="Phone">
+              </div>
+              <div class="col-xl-6">
+                <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
+                  <option selected>Sensor options</option>
+                  <option value="1">RGB</option>
+                  <option value="2">Multispectral</option>
+                  <option value="3">Hyperspectral</option>
+					<option value="3">LiDAR</option>
+                </select>
+              </div>
+              <div class="col-xl-6">
+                <input type="date" class="form-control py-3 border-primary bg-transparent">
+              </div>
+              <div class="col-xl-6">
+                <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
+                  <option selected>Field</option>
+                  <option value="1">Agriculture</option>
+                  <option value="2">Forestry</option>
+                  <option value="2">Geology</option>
+                </select>
+              </div>
+              <div class="col-xl-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault"> RGB </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked"> Multispectral </label>
+                </div>
+				<div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked"> Hyperspectral </label>
+                </div>
+				  <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                  <label class="form-check-label" for="flexCheckChecked"> LiDAR </label>
+                </div>
+              </div>
+              <div class="col-12">
+                <textarea class="form-control border-primary bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
+              </div>
+              <div class="col-12">
+                <button type="button" class="btn btn-primary text-primary w-100 py-3 px-5">SUBMIT</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal Video -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content rounded-0">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body"> 
+        <!-- 16:9 aspect ratio -->
+        <div class="ratio ratio-16x9">
+          <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
+                                allow="autoplay"></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Book Appointment End --> 
+
+<!-- Footer Start --> 
+<!-- Start footer -->
+<div id="foot-placeholder"> </div>
+<!-- End footer --> 
+<!-- Footer End --> 
+
+<!-- Copyright Start -->
+<div class="container-fluid copyright py-4">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-6 text-center text-md-start mb-md-0"> <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span> </div>
+      <div class="col-md-6 text-center text-md-end text-white"> 
+        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/--> 
+        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/--> 
+        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/--> 
+        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a> </div>
+    </div>
+  </div>
+</div>
+<!-- Copyright End --> 
+
+<!-- Back to Top --> 
+<a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a> 
+
+<!-- JavaScript Libraries --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> 
+<script src="lib/wow/wow.min.js"></script> 
+<script src="lib/easing/easing.min.js"></script> 
+<script src="lib/waypoints/waypoints.min.js"></script> 
+<script src="lib/owlcarousel/owl.carousel.min.js"></script> 
+<script>
+			$.get("navigation.html", function(data){
+				$("#nav-placeholder").replaceWith(data);
+			});
+		</script> 
+<script>
+			$.get("footer.html", function(data){
+				$("#foot-placeholder").replaceWith(data);
+			});
+		</script> 
+
+<!-- Template Javascript --> 
+<script src="js/main.js"></script>
+</body>
+</html>

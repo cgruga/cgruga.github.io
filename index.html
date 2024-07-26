@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Center for Geospatial Research</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="research geography geographic information systems remote sensing drones" name="keywords">
+        <meta content="Center for Geospatial Research" name="description">
+		<meta content="Sergio Bernardes" name="author">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&family=Roboto:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+			
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+		
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+		
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Topbar Start 
+        <div class="container-fluid bg-dark px-5 d-none d-lg-block">
+            <div class="row gx-0 align-items-center" style="height: 45px;">
+                <div class="col-lg-8 text-center text-lg-start mb-lg-0">
+                    <div class="d-flex flex-wrap">
+                        <a href="#" class="text-light me-4"><i class="fas fa-map-marker-alt text-primary me-2"></i>Find A Location</a>
+                        <a href="#" class="text-light me-4"><i class="fas fa-phone-alt text-primary me-2"></i>+01234567890</a>
+                        <a href="#" class="text-light me-0"><i class="fas fa-envelope text-primary me-2"></i>Example@gmail.com</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center text-lg-end">
+                    <div class="d-flex align-items-center justify-content-end">
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-light btn-square border rounded-circle nav-fill me-0"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Topbar End -->
+		
+
+        <!-- Navbar & Hero Start -->
+        <div class="container-fluid position-relative p-0">
+            
+			<!-- Start navigation bar -->
+			<div id="nav-placeholder"></div>
+			<!-- End navigation bar --> 
+
+            <!-- Carousel Start -->
+            <div class="header-carousel owl-carousel">
+                <div class="header-carousel-item">
+                    <img src="img/1920x1080/SHEP_dark.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="carousel-caption-content p-3">
+                            <!--<h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Center for Geospatial Research</h5>-->
+                            <h3 class="display-5 text-capitalize text-white mb-4">Geospatial Data Science</h3>
+                            <p class="mb-5 fs-5">Environmental monitoring in support of impact mitigation. 
+                            </p>
+							<!--
+                            	<a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Book Appointment</a>
+							-->
+                        </div>
+                    </div>
+                </div>
+				<div class="header-carousel-item">
+                    <img src="img/1920x1080/SHEP_light.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="carousel-caption-content p-3">
+                            <!--<h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Center for Geospatial Research</h5>-->
+                            <h3 class="display-5 text-capitalize text-white mb-4">Geospatial Data Science 2</h3>
+                            <p class="mb-5 fs-5">Environmental monitoring in support of impact mitigation. 
+                            </p>
+							<!--
+                            	<a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Book Appointment</a>
+							-->
+                        </div>
+                    </div>
+                </div>
+				<div class="header-carousel-item">
+                    <img src="img/1920x1080/hands.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="carousel-caption-content p-3">
+                            <!--<h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Center for Geospatial Research</h5>-->
+                            <h3 class="display-5 text-capitalize text-white mb-4">Geospatial Data Science 2</h3>
+                            <p class="mb-5 fs-5">Environmental monitoring in support of impact mitigation. 
+                            </p>
+							<!--
+                            	<a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Book Appointment</a>
+							-->
+                        </div>
+                    </div>
+                </div>
+                <!--
+					<div class="header-carousel-item">
+                    <img src="img/carousel-2.jpg" class="img-fluid w-100" alt="Image">
+                    <div class="carousel-caption">
+                        <div class="carousel-caption-content p-3">
+                            <h5 class="text-white text-uppercase fw-bold mb-4" style="letter-spacing: 3px;">Physiotherapy Center</h5>
+                            <h1 class="display-1 text-capitalize text-white mb-4">Best Solution For Painful Life</h1>
+                            <p class="mb-5 fs-5 animated slideInDown">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                            </p>
+                            
+								<a class="btn btn-primary rounded-pill text-white py-3 px-5" href="#">Book Appointment</a>
+                        </div>
+                    </div>
+					
+                </div>
+					-->
+            </div>
+            <!-- Carousel End -->
+        </div>
+        <!-- Navbar & Hero End -->
+
+		
+		<!-- About Start -->
+        <div class="container-fluid mb-4 about bg-light py-0">
+            <div class="container py-5">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-5 wow fadeIn" data-wow-delay="0.2s">
+                        <div class="about-img pb-5 ps-5">
+                            <img src="img/970x970/globesectors.jpg" class="img-fluid rounded w-100" style="object-fit: cover;" alt="Image">
+                            <!--
+							<div class="about-img-inner">
+                                <img src="img/250x250/sandbox_sm.jpg" class="img-fluid rounded-circle w-60 h-60" alt="Image">
+                            </div>
+							-->
+                            <div class="about-experience">39 years of research</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-7 wow fadeIn" data-wow-delay="0.4s">
+                        <div class="section-title text-start mb-3">
+                            <h5 class="sub-title pe-3 mb-0">our field</h5>
+                            <h1 class="display-5 mb-4">Geospatial Research</h1>
+                            <p class="mb-4">Advancing remote sensing and GeoAI applied to climate and environmental studies using cutting-edge science and engineering for data collection, analysis, geovisualization and modeling through ground sensor networks, UAVs, satellites, citizen science, and small satellite development.</p>
+                            <div class="mb-4">
+                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>environmental remote sensing and GeoAI</p>
+                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>photogrammetry</p>
+                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>small satellite development</p>
+                                <p class="mb-4"><i class="fa fa-check text-primary me-2"></i>graduate and undergraduate training</p>
+								<p class="mb-4"><i class="fa fa-check text-primary me-2"></i>DEI and outreach programs</p>							
+
+                            </div>
+                            <a href="projects_current.html" class="btn btn-primary rounded-pill py-2 px-4">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->		
+
+        <!-- News Start -->
+        <div class="container-fluid blog py-1">
+            <div class="container py-3">
+                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h4 class="sub-title px-3 mb-0">News</h4>
+                    </div>
+                    <!--
+                    	<h1 class="display-3 mb-4">Excellent Facility and High Quality Therapy</h1>
+						<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+					-->
+                </div>
+				
+                <div class="row g-4 justify-content-center">
+					<div class="col-md-4 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+					   <div class="blog-item rounded">
+                            <div class="blog-img">
+                                <img src="img/970x970/ar_reaction.jpg" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="blog-centent p-4">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> &nbsp;20 Jun 2024</p>
+                                    <!--
+										<a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
+									-->
+                                </div>
+                                <!--
+									<a href="#" class="h4">Virtual/Augmented Reality</a>
+								-->
+                                <p class="my-4">New Learning Technologies Grant will help incorporate virtual and augmented reality into research and classrooms.</p>
+                                <a href="#" class="btn btn-primary rounded-pill py-1 px-3 mb-1">Read More</a>
+                            </div>
+                        </div>
+                    </div>					
+                    <div class="col-md-4 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+					   <div class="blog-item rounded">
+                            <div class="blog-img">
+                                <img src="img/970x970/deepakmishra.jpg" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="blog-centent p-4">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> &nbsp;15 May 2024</p>
+                                    <!--
+										<a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
+									-->
+                                </div>
+                                <!--
+									<a href="#" class="h4">Virtual/Augmented Reality</a>
+								-->
+                                <p class="my-4">UGA Professor Dr. Deepak Mishra named new director of the Center for Geospatial Research.</p>
+                                <a href="#" class="btn btn-primary rounded-pill py-1 px-3 mb-1">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="blog-item rounded">
+                            <div class="blog-img">
+                                <img src="img/970x970/sandbox.jpg" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="blog-centent p-4">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> &nbsp;05 May 2024</p>
+                                    <!--
+										<a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
+									-->
+                                </div>
+								<!--
+                                	<a href="#" class="h4">Understanding Urban Heat Island Processes</a>
+								-->
+                                <p class="my-4">Dr. Bernardes and a team of collaborators receive funds to incorporate AI and augmented reality into forest management.</p>
+                                <a href="#" class="btn btn-primary rounded-pill py-1 px-3 mb-1">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+					<!--
+                    <div class="col-md-4 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
+                        <div class="blog-item rounded">
+                            <div class="blog-img">
+                                <img src="img/970x970/shep.jpg" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="blog-centent p-4">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> &nbsp;15 Mar 2024</p>
+									
+                                </div>
+                                <p class="my-4">Environmental monitoring of the Savannah Harbor Expansion Project transitions to post-construction phase.</p>
+                                <a href="#" class="btn btn-primary rounded-pill text-white py-1 px-3 mb-1">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+					-->
+					<div class="col-md-4 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+					   <div class="blog-item rounded">
+                            <div class="blog-img">
+                                <img src="img/970x970/geography.jpg" class="img-fluid w-100" alt="Image">
+                            </div>
+                            <div class="blog-centent p-4">
+                                <div class="d-flex justify-content-between mb-4">
+                                    <p class="mb-0 text-muted"><i class="fa fa-calendar-alt text-primary"></i> &nbsp;17 Jan 2024</p>
+                                    <!--
+										<a href="#" class="text-muted"><span class="fa fa-comments text-primary"></span> 3 Comments</a>
+									-->
+                                </div>
+                                <!--
+									<a href="#" class="h4">Virtual/Augmented Reality</a>
+								-->
+                                <p class="my-4">Recent funding is helping us understand the contribution of types of pavement to the urban heat island phenomenon.</p>
+                                <a href="#" class="btn btn-primary rounded-pill py-1 px-3 mb-1">Read More</a>
+                            </div>
+                        </div>
+                    </div>										
+                </div>
+            </div>
+        </div>
+        <!-- News End -->
+		
+        <!-- Feature Research Projects  Start -->
+        <div class="container-fluid service py-2">
+            <div class="container py-5">
+                <div class="section-title mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="sub-style">
+                        <h4 class="sub-title px-3 mb-0">Featured Research Projects</h4>
+                    </div>
+                    <!-- <h3 class="display-3 mb-4">Research Projects.</h3> 
+					-->
+					<!--
+                    <p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat deleniti amet at atque sequi quibusdam cumque itaque repudiandae temporibus, eius nam mollitia voluptas maxime veniam necessitatibus saepe in ab? Repellat!</p>
+					-->
+                </div>
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="service-item rounded">
+                           <div class="service-img rounded-top">
+                                <img src="img/400x300/shep_sedimentbasin.jpg" class="img-fluid rounded-top w-100" alt="">
+                           </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4 text-dark">Savannah Harbor Expansion Project Monitoring Program</h5>
+                                    <p class="mb-4">Geospatial technologies in support of environmental monitoring linked to deepening of the Savannah River.</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-1 px-3 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.2s">
+                        <div class="service-item rounded">
+                           <div class="service-img rounded-top">
+                                <img src="img/400x300/htp_crops.jpg" class="img-fluid rounded-top w-100" alt="">
+                           </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4 text-dark">High Throughput Phenotyping of Forages</h5>
+                                    <p class="mb-4">Spectral bioindicators and morphometric descriptors of vegetation for plant trait estimations.</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-1 px-3 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.3s">
+                        <div class="service-item rounded">
+                           <div class="service-img rounded-top">
+                                <img src="img/400x300/ar_forestmanagement.jpg" class="img-fluid rounded-top w-100" alt="">
+                           </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4 text-dark">Integrating Drones, AI and Augmented Reality into Forest Management</h5>
+                                    <p class="mb-4">Brief project description</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-1 px-3 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.4s">
+                        <div class="service-item rounded">
+                           <div class="service-img rounded-top">
+                                <img src="img/400x300/urbanheatisland.jpg" class="img-fluid rounded-top w-100" alt="">
+                           </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4 text-dark">Modified Pavement Contributions to Urban Heat Island</h5>
+                                    <p class="mb-4">Investigaing potential urban heat island mitigation strategies in marginalized communities.</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-1 px-3 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>					
+					<div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.5s">
+                        <div class="service-item rounded">
+                           <div class="service-img rounded-top">
+                                <img src="img/400x300/cobbsworld.jpg" class="img-fluid rounded-top w-100" alt="">
+                           </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4 text-dark">Cultural Heritage Preservation Using Historical Digital Twins</h5>
+                                    <p class="mb-4">Using historical accounts, drones, 3D reconstruction and modeling to recreate landscapes in the 1850s</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-1 px-3 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>					
+					<div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.6s">
+						<div class="service-item rounded">
+                           <div class="service-img rounded-top">
+                                <img src="img/400x300/cgr_placeholder.jpg" class="img-fluid rounded-top w-100" alt="">
+                           </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4 text-dark">Project</h5>
+                                    <p class="mb-4">Short description.</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-1 px-3 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.7s">
+						<div class="service-item rounded">
+                           <div class="service-img rounded-top">
+                                <img src="img/400x300/cgr_placeholder.jpg" class="img-fluid rounded-top w-100" alt="">
+                           </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4 text-dark">Project</h5>
+                                    <p class="mb-4">Short description.</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-1 px-3 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+					<div class="col-md-6 col-lg-4 col-xl-3 wow fadeIn" data-wow-delay="0.8s">
+						<div class="service-item rounded">
+                           <div class="service-img rounded-top">
+                                <img src="img/400x300/cgr_placeholder.jpg" class="img-fluid rounded-top w-100" alt="">
+                           </div>
+                            <div class="service-content rounded-bottom bg-light p-4">
+                                <div class="service-content-inner">
+                                    <h5 class="mb-4 text-dark">Project</h5>
+                                    <p class="mb-4">Short description.</p>
+                                    <a href="#" class="btn btn-primary rounded-pill py-1 px-3 mb-2">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>           
+                                       
+                    
+                </div>
+            </div>
+        </div>
+        <!-- Feature Research Projects  End -->
+
+        <!-- Footer Start -->
+        <div id="foot-placeholder"> </div>
+        <!-- Footer End -->
+        
+        <!-- Copyright Start -->
+        <div class="container-fluid copyright py-4">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6 text-center text-md-start mb-md-0">
+                        <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Center for Geospatial Research</a>, All right reserved.</span>
+                    </div>
+                    <div class="col-md-6 text-center text-md-end text-white">
+                        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/-->
+                        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/-->
+                        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/-->
+                        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Copyright End -->
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a>   
+
+        
+        <!-- JavaScript Libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+		<script>
+			$.get("navigation.html", function(data){
+				$("#nav-placeholder").replaceWith(data);
+			});
+		</script> 
+		<script>
+			$.get("footer.html", function(data){
+				$("#foot-placeholder").replaceWith(data);
+			});
+		</script>		
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        
+    </body>
+
+</html>
