@@ -57,92 +57,149 @@
 <!-- Information Request Start -->
 <div class="container-fluid py-3">
   <div class="container py-1">
-    <div class="row g-5 align-items-center">
-      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2" >
         <div class="section-title text-start">
-          <h5 class="sub-title pe-3 mb-0">UAV-Based Data Collections</h5>
-          <h1 class="display-6 mb-4">Drone-Based Data Collections</h1>
-          <p class="mb-4">CGR is equipped with a variety of drones and remote sensors that can be requested and tasked to collect data in support of investigations conducted by other groups. Use this form to provide information on your drone data collection needs and to request information on system availability and costs.&nbsp;&nbsp; </p>
+          <h2 class="display-7 mb-4">Drone-Based Data Collections</h2>
+          <p class="mb-4">CGR is equipped with a variety of drones and remote sensors that can be requested and tasked to collect data in support of investigations conducted by other groups.</p>
+			<p class="mb-4">Check available drones and sensors <a href="sensors.html">here</a> and then use this page to provide information on your drone data collection needs and to request information on system availability and collection costs.</p>
+			
           <div class="row g-4">
-            <div class="col-sm-6">
-              <div class="d-flex flex-column h-100">
-                <div class="mb-4">
-                  <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> RGB imaging for mosaicking and 3D reconstruction</h5>
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et deserunt qui cupiditate veritatis enim ducimus.</p>
-                </div>
-                <div class="mb-4">
-                  <h5 class="mb-3"><i class="fa fa-check text-primary me-2"></i> Multispectral imaging</h5>
-                  <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et deserunt qui cupiditate veritatis enim ducimus.</p>
-                </div>
-                <div class="text-start mb-4"> <a href="#" class="btn btn-primary rounded-pill text-white py-3 px-5">More Details</a> </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="video h-100"> <img src="img/video-img.jpg" class="img-fluid rounded w-100 h-100" style="object-fit: cover;" alt="">
+			<div class="col-sm-10">
+              <div class="video h-100"> <img src="img/400x300/htp_crops.jpg" class="img-fluid rounded w-100 h-100" style="object-fit: cover;" alt="">
                 <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal"> <span></span> </button>
               </div>
             </div>
-          </div>
+			</div>
         </div>
       </div>
       <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
         <div class="appointment-form bg-light rounded p-5">
-          <p class="fs-2 text-uppercase text-primary">Get In Touch</p>
-          <h1 class="display-6 mb-1">Request UAV Service</h1>
+          <h5 class="sub-title pe-3 mb-0">Request Drone Service</h5>
+          
+          <!--
+			<p class="fs-2 text-uppercase text-primary">Get In Touch</p>
+-->
+          <p class="text-dark mb-4">Please use this form to send us a request for data collection with our drones and remote sensors. Our team will analyze the request and contact you for further coordination.</p>
           <form>
             <div class="row gy-2 gx-4">
+              <h5 class="display-7 mb-1">Requestor</h5>
               <div class="col-xl-20">
-                <input type="text" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Name*">
+                <input type="text" class="form-control py-3 border-primary bg-transparent text-dark" placeholder="Name*">
               </div>
               <div class="col-xl-15">
-                <input type="email" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Email*">
+                <input type="email" class="form-control py-3 border-primary bg-transparent text-dark" placeholder="Email*">
               </div>
               <div class="col-xl-15">
-                <input type="organization" class="form-control py-3 border-primary bg-transparent text-white" placeholder="Organization*">
+                <input type="organization" class="form-control py-3 border-primary bg-transparent text-dark" placeholder="Organization*">
               </div>
-              <div class="col-xl-6">
-                <input type="phone" class="form-control py-3 border-primary bg-transparent" placeholder="Phone">
+              <div class="col-xl-15">
+                <input type="phone" class="form-control py-3 border-primary bg-transparent text-dark" placeholder="Phone">
               </div>
-              <div class="col-xl-6">
-                <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
-                  <option selected>Sensor options</option>
-                  <option value="1">RGB</option>
-                  <option value="2">Multispectral</option>
-                  <option value="3">Hyperspectral</option>
-					<option value="3">LiDAR</option>
-                </select>
-              </div>
-              <div class="col-xl-6">
-                <input type="date" class="form-control py-3 border-primary bg-transparent">
-              </div>
-              <div class="col-xl-6">
-                <select class="form-select py-3 border-primary bg-transparent" aria-label="Default select example">
-                  <option selected>Field</option>
-                  <option value="1">Agriculture</option>
-                  <option value="2">Forestry</option>
-                  <option value="2">Geology</option>
-                </select>
-              </div>
-              <div class="col-xl-6">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                  <label class="form-check-label" for="flexCheckDefault"> RGB </label>
+              <h5 class="display-7 mt-4 mb-1">Collection Needs</h5>
+              <div class="col-xl-15">
+                <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
+                  <div class="form-group pb-3">
+                    <label class="text-dark mb-2" for="checkboxes">Select the type of data you need (read about our drone platforms and sensor capabilities <a href="sensors.html">here</a>):</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="sensorRGB">
+                      <label class="text-dark form-check-label" for="sensorRGB"> RGB </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="sensorXS4">
+                      <label class="text-dark form-check-label" for="sensorXS4"> 4-band multispectral (green, red, red edge, NIR)</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="sensorXS5">
+                      <label class="text-dark form-check-label" for="sensorXS5"> 5-band multispectral (blue, green, red, red edge, NIR)</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
+                      <label class="text-dark form-check-label" for="sensorXS10"> 10-band multispectral (blue, green, red, red edge, NIR) x2 </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
+                      <label class="text-dark form-check-label" for="sensorXS10"> hyperspectral</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
+                      <label class="text-dark form-check-label" for="sensorXS10"> thermal</label>
+                    </div>
+				    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="sensorRGB">
+                      <label class="text-dark form-check-label" for="sensorRGB"> LiDAR  &nbsp; </label>
+                    </div>
+                  </div>
+                  <div class="form-group pb-0">
+                    <label class=text-dark "mb-2" for="checkboxes">Select image processing level and products you would like delivered to you:</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="sensorRGB">
+                      <label class="text-dark form-check-label" for="sensorRGB"> raw values </label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="sensorXS4">
+                      <label class="text-dark form-check-label" for="sensorXS4"> calibrated reflectance</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="sensorXS4">
+                      <label class="text-dark form-check-label" for="sensorXS4"> temperature values</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="sensorXS5">
+                      <label class=text-dark "form-check-label" for="sensorXS5"> orthomosaic</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
+                      <label class="text-dark form-check-label" for="sensorXS10"> digital surface model</label>
+                    </div>
+					  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
+                      <label class="text-dark form-check-label" for="sensorXS10"> point cloud</label>
+                    </div>
+					  <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
+                      <label class="text-dark form-check-label" for="sensorXS10"> other</label>
+                    </div>
+                  </div>
+                  
                 </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                  <label class="form-check-label" for="flexCheckChecked"> Multispectral </label>
-                </div>
-				<div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                  <label class="form-check-label" for="flexCheckChecked"> Hyperspectral </label>
-                </div>
-				  <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                  <label class="form-check-label" for="flexCheckChecked"> LiDAR </label>
+              </div>
+              <div class="col-xl-15 mb-1">
+                <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
+                  <div class="form-group pb-3">
+                    <label class="text-dark mb-2" for="">Please indicate if the collection requires a United States federally compliant drone (DoD Blue List):</label>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="optionsRadios" id="option1" value="option1">
+                      <label class="text-dark form-check-label" for="option1">yes</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="optionsRadios" id="option2" value="option2">
+                      <label class="text-dark form-check-label" for="option2">no</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="optionsRadios" id="option3" value="option3" checked>
+                      <label class="text-dark form-check-label" for="option3">not sure</label>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="col-12">
-                <textarea class="form-control border-primary bg-transparent text-white" name="text" id="area-text" cols="30" rows="5" placeholder="Write Comments"></textarea>
+              <div class="col-xl-15 mb-2">
+                <p class="text-dark mb-0">Provide the location where the collection needs to be conducted:</p>
+                <div class="col-12">
+                  <textarea class="form-control border-primary bg-transparent text-dark" name="text" id="area-text" cols="30" rows="2" placeholder="location*"></textarea>
+                </div>
+              </div>
+              <div class="col-xl-15 mb-2">
+                <p class="text-dark mb-0">Please indicate date or period for the collection, including if&nbsp;multiple collections is needed:</p>
+                <div class="col-12">
+                  <textarea class="form-control border-primary bg-transparent text-dark" name="text" id="area-text" cols="30" rows="2" placeholder=""></textarea>
+                </div>
+              </div>
+              <div class="col-xl-15 mb-1">
+                <p class="text-dark mb-0">Use the space below to provide any additional information or details your consider relevant to the drone data collection and/or derived products.</p>
+                <div class="col-12">
+                  <textarea class="form-control border-primary bg-transparent text-dark" name="text" id="area-text" cols="30" rows="5" placeholder=""></textarea>
+                </div>
               </div>
               <div class="col-12">
                 <button type="button" class="btn btn-primary text-primary w-100 py-3 px-5">SUBMIT</button>
