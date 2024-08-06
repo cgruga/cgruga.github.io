@@ -59,18 +59,17 @@
   <div class="container py-1">
     <div class="row g-5 align-items-start">
       <div class="col-lg-6 wow fadeIn" data-wow-delay="0.2" >
-        <div class="section-title text-start">
+        <div class="section-title text-start pt-5">
           <h2 class="display-7 mb-4">Drone-Based Data Collections</h2>
           <p class="mb-4">CGR is equipped with a variety of drones and remote sensors that can be requested and tasked to collect data in support of investigations conducted by other groups.</p>
-			<p class="mb-4">Check available drones and sensors <a href="sensors.html">here</a> and then use this page to provide information on your drone data collection needs and to request information on system availability and collection costs.</p>
-			
+          <p class="mb-4">Check available drones and sensors <a href="sensors.html">here</a> and then use this page to provide information on your drone data collection needs and to request information on system availability and collection costs.</p>
           <div class="row g-4">
-			<div class="col-sm-10">
+            <div class="col-sm-10">
               <div class="video h-100"> <img src="img/400x300/htp_crops.jpg" class="img-fluid rounded w-100 h-100" style="object-fit: cover;" alt="">
                 <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal"> <span></span> </button>
               </div>
             </div>
-			</div>
+          </div>
         </div>
       </div>
       <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
@@ -80,7 +79,7 @@
           <!--
 			<p class="fs-2 text-uppercase text-primary">Get In Touch</p>
 -->
-          <p class="text-dark mb-4">Please use this form to send us a request for data collection with our drones and remote sensors. Our team will analyze the request and contact you for further coordination.</p>
+          <p class="text-dark mb-4">Use this form to send us a request for data collection. Our team will analyze the request and contact you for further coordination.</p>
           <form>
             <div class="row gy-2 gx-4">
               <h5 class="display-7 mb-1">Requestor</h5>
@@ -100,22 +99,22 @@
               <div class="col-xl-15">
                 <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
                   <div class="form-group pb-3">
-                    <label class="text-dark mb-2" for="checkboxes">Select the type of data you need (read about our drone platforms and sensor capabilities <a href="sensors.html">here</a>):</label>
+                    <label class="text-dark mb-2" for="checkboxes">Select the type of data you need. Click <a href="sensors.html">here</a> for information on drones and sensors. Click individual sensors for sensor specific capabilities.</label>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="sensorRGB">
-                      <label class="text-dark form-check-label" for="sensorRGB"> RGB </label>
+                      <label class="text-dark form-check-label" for="sensorRGB"><a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#infoRGB"> RGB </a></label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="sensorXS4">
-                      <label class="text-dark form-check-label" for="sensorXS4"> 4-band multispectral (green, red, red edge, NIR)</label>
+                      <label class="text-dark form-check-label" for="sensorXS4"> <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#infoXS4"> 4-band multispectral </a></label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="sensorXS5">
-                      <label class="text-dark form-check-label" for="sensorXS5"> 5-band multispectral (blue, green, red, red edge, NIR)</label>
+                      <label class="text-dark form-check-label" for="sensorXS5"> 5-band multispectral</label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
-                      <label class="text-dark form-check-label" for="sensorXS10"> 10-band multispectral (blue, green, red, red edge, NIR) x2 </label>
+                      <label class="text-dark form-check-label" for="sensorXS10"> 10-band multispectral</label>
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
@@ -125,13 +124,13 @@
                       <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
                       <label class="text-dark form-check-label" for="sensorXS10"> thermal</label>
                     </div>
-				    <div class="form-check">
+                    <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="sensorRGB">
                       <label class="text-dark form-check-label" for="sensorRGB"> LiDAR  &nbsp; </label>
                     </div>
                   </div>
                   <div class="form-group pb-0">
-                    <label class=text-dark "mb-2" for="checkboxes">Select image processing level and products you would like delivered to you:</label>
+                    <label class=text-dark "mb-2" for="checkboxes">Select image/date processing level and products you would like delivered to you:</label>
                     <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="sensorRGB">
                       <label class="text-dark form-check-label" for="sensorRGB"> raw values </label>
@@ -152,16 +151,15 @@
                       <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
                       <label class="text-dark form-check-label" for="sensorXS10"> digital surface model</label>
                     </div>
-					  <div class="form-check">
+                    <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
                       <label class="text-dark form-check-label" for="sensorXS10"> point cloud</label>
                     </div>
-					  <div class="form-check">
+                    <div class="form-check">
                       <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
-                      <label class="text-dark form-check-label" for="sensorXS10"> other</label>
+                      <label class="text-dark form-check-label" for="sensorXS10"> other (use the Additional Comments area below to provide details)</label>
                     </div>
                   </div>
-                  
                 </div>
               </div>
               <div class="col-xl-15 mb-1">
@@ -178,7 +176,7 @@
                     </div>
                     <div class="form-check">
                       <input class="form-check-input" type="radio" name="optionsRadios" id="option3" value="option3" checked>
-                      <label class="text-dark form-check-label" for="option3">not sure</label>
+                      <label class="text-dark form-check-label" for="option3">unknown</label>
                     </div>
                   </div>
                 </div>
@@ -188,15 +186,16 @@
                 <div class="col-12">
                   <textarea class="form-control border-primary bg-transparent text-dark" name="text" id="area-text" cols="30" rows="2" placeholder="location*"></textarea>
                 </div>
+                <p class="text-dark mb-0">You can upload a kml/kmz with limits of the area to be flown here:</p>
               </div>
               <div class="col-xl-15 mb-2">
-                <p class="text-dark mb-0">Please indicate date or period for the collection, including if&nbsp;multiple collections is needed:</p>
+                <p class="text-dark mb-0">Please indicate date or period for the collection, including if&nbsp;multiple collections are needed:</p>
                 <div class="col-12">
                   <textarea class="form-control border-primary bg-transparent text-dark" name="text" id="area-text" cols="30" rows="2" placeholder=""></textarea>
                 </div>
               </div>
               <div class="col-xl-15 mb-1">
-                <p class="text-dark mb-0">Use the space below to provide any additional information or details your consider relevant to the drone data collection and/or derived products.</p>
+                <p class="text-dark mb-0"><strong>Additional Comments</strong> (use the space below to provide any additional information or details your consider relevant to the drone data collection and the products you need).</p>
                 <div class="col-12">
                   <textarea class="form-control border-primary bg-transparent text-dark" name="text" id="area-text" cols="30" rows="5" placeholder=""></textarea>
                 </div>
@@ -254,6 +253,50 @@
 
 <!-- Back to Top --> 
 <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a> 
+
+<!-- Modal -->
+<div class="modal fade" id="infoRGB" tabindex="-1" aria-labelledby="infoRGBLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="infoRGBLabel">RGB Sensor</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-dark mb-3">Geotagged RGB images can be collected in compressed and/or raw format. Image acquisition possibilities include the cameras and drones below:</p>
+        <ul>
+          <li>20 MP camera 4/3 CMOS sensor (DJI Mavic 3)</li>
+          <li>20 MP camera 4/3 CNOS sensor (DJI Mavic 3M, images can be collected simultaneous to multispectral data).</li>
+          <li>20 MP camera 4/3 CMOS sensor (DJI Phantom 4 Pro)</li>
+          <li>48 MP camera (Autel EVO II)</li>
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="infoXS4" tabindex="-1" aria-labelledby="infoXS4Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="infoXS4Label">4-Band Multispectral Sensor</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="text-dark mb-3">Geotagged multispectral images can be collected in lossless compressed format. Image acquisition possibilities include the camera and drone below:</p>
+        <ul>
+          <li>5 MP, spectral regions: green, red, red edge, near infrared;  (DJI Mavic 3M, images can be collected simultaneous to 20 MP RGB data).</li>
+        </ul>
+        <p class="text-dark mb-3">Collections include data from a downwelling radiation sensor and a ground calibration panel (optional)</p>
+        <a href="https://ag.dji.com/mavic-3-m/specs">Further sensor details (external link)</a> </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- JavaScript Libraries --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
