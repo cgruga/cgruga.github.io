@@ -14,7 +14,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
 
 <!-- Icon Font Stylesheet -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css"/>
+<!--	
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+-->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
 
 <!-- Libraries Stylesheet -->
@@ -49,7 +52,7 @@
 <!-- Header Start -->
 <div class="container-fluid bg-breadcrumb">
   <div class="container text-center py-5" style="max-width: 900px;">
-    <h3 class="text-white display-5 mb-4 wow fadeInDown" data-wow-delay="0.1s">Drone Services</h3>
+    <h3 class="text-white display-5 mb-4 wow fadeIn" data-wow-delay="0.3s">Drone Services</h3>
   </div>
 </div>
 <!-- Header End --> 
@@ -72,7 +75,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-6 wow fadeInRight" data-wow-delay="0.4s">
+      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
         <div class="appointment-form bg-light rounded p-5">
           <h5 class="sub-title pe-3 mb-0">Request Drone Service</h5>
           
@@ -80,128 +83,176 @@
 			<p class="fs-2 text-uppercase text-primary">Get In Touch</p>
 -->
           <p class="text-dark mb-4">Use this form to send us a request for data collection. Our team will analyze the request and contact you for further coordination.</p>
-          <form>
+          <form action="https://fabform.io/f/YfU7ii2" method="post">
             <div class="row gy-2 gx-4">
               <h5 class="display-7 mb-1">Requestor</h5>
               <div class="col-xl-20">
-                <input type="text" class="form-control py-3 border-primary bg-transparent text-dark" placeholder="Name*">
+                <input type="text" class="form-control py-3 border-primary bg-transparent" name="requestorName" id="requestorName" placeholder="Name*">
               </div>
               <div class="col-xl-15">
-                <input type="email" class="form-control py-3 border-primary bg-transparent text-dark" placeholder="Email*">
+                <input type="email" class="form-control py-3 border-primary bg-transparent" name="requestorEmail" id="requestorEmail" placeholder="Email*">
               </div>
               <div class="col-xl-15">
-                <input type="organization" class="form-control py-3 border-primary bg-transparent text-dark" placeholder="Organization*">
+                <input type="text" class="form-control py-3 border-primary bg-transparent" name="requestorOrg" id="requestorOrg" placeholder="Organization*">
               </div>
               <div class="col-xl-15">
-                <input type="phone" class="form-control py-3 border-primary bg-transparent text-dark" placeholder="Phone">
+                <input type="phone" class="form-control py-3 border-primary bg-transparent" name="requestorPhone" id="requestorPhone" placeholder="Phone">
               </div>
               <h5 class="display-7 mt-4 mb-1">Collection Needs</h5>
               <div class="col-xl-15">
                 <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
                   <div class="form-group pb-3">
-                    <label class="text-dark mb-2" for="checkboxes">Select the type of data you need. Click <a href="sensors.html">here</a> for information on drones and sensors. Click individual sensors for sensor specific capabilities.</label>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="sensorRGB">
-                      <label class="text-dark form-check-label" for="sensorRGB"><a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#infoRGB"> RGB </a></label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="sensorXS4">
-                      <label class="text-dark form-check-label" for="sensorXS4"> <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#infoXS4"> 4-band multispectral </a></label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="sensorXS5">
-                      <label class="text-dark form-check-label" for="sensorXS5"> 5-band multispectral</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
-                      <label class="text-dark form-check-label" for="sensorXS10"> 10-band multispectral</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
-                      <label class="text-dark form-check-label" for="sensorXS10"> hyperspectral</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
-                      <label class="text-dark form-check-label" for="sensorXS10"> thermal</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="sensorRGB">
-                      <label class="text-dark form-check-label" for="sensorRGB"> LiDAR  &nbsp; </label>
-                    </div>
+                    <fieldset>
+                      <legend class="legend-small mb-2">Select the <strong>type of data</strong> you need.</legend>
+                      <small>
+                      <p>(click <a href="sensors.html" target="_blank" rel="noopener noreferrer">here</a> for information on drones and sensors. Click individual sensors for sensor-specific capabilities).</p>
+                      </small>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="sensorRGB" id="sensorRGB">
+                        <label class="form-check-label" for="sensorRGB"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoRGB"> RGB </a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="sensorXS4" id="sensorXS4">
+                        <label class="form-check-label" for="sensorXS4"> <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#infoXS4"> 4-band multispectral </a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="sensorXS5" id="sensorXS5">
+                        <label class="form-check-label" for="sensorXS5"><a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#infoXS5"> 5-band multispectral</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="sensorXS10" id="sensorXS10">
+                        <label class="form-check-label" for="sensorXS10"><a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#infoXS10"> 10-band multispectral</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="sensorHS" id="sensorHS">
+                        <label class="form-check-label" for="sensorHS"><a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#infoHS"> Hyperspectral</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="sensorTIR" id="sensorTIR">
+                        <label class="form-check-label" for="sensorTIR"><a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#infoTIR"> Thermal</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="sensorLiDAR" id="sensorLiDAR">
+                        <label class="form-check-label" for="sensorLiDAR"><a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#infoLiDAR"> LiDAR</a></label>
+                      </div>
+                      <div class="form-check mt-2">
+                        <input class="form-check-input" type="checkbox" value="" name="sensorOther" id="sensorOther">
+                        <label class="form-check-label" for="sensorOther"> Other (use the Additional Comments area below to provide details on your data needs)</label>
+                      </div>
+                    </fieldset>
                   </div>
-                  <div class="form-group pb-0">
-                    <label class=text-dark "mb-2" for="checkboxes">Select image/date processing level and products you would like delivered to you:</label>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="sensorRGB">
-                      <label class="text-dark form-check-label" for="sensorRGB"> raw values </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="sensorXS4">
-                      <label class="text-dark form-check-label" for="sensorXS4"> calibrated reflectance</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="sensorXS4">
-                      <label class="text-dark form-check-label" for="sensorXS4"> temperature values</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="sensorXS5">
-                      <label class=text-dark "form-check-label" for="sensorXS5"> orthomosaic</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
-                      <label class="text-dark form-check-label" for="sensorXS10"> digital surface model</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
-                      <label class="text-dark form-check-label" for="sensorXS10"> point cloud</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="sensorXS10">
-                      <label class="text-dark form-check-label" for="sensorXS10"> other (use the Additional Comments area below to provide details)</label>
-                    </div>
+                </div>
+              </div>
+              <div class="col-xl-15">
+                <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
+                  <div class="form-group pb-3">
+                    <fieldset>
+                      <legend class="legend-small mb-2">Select image/data <strong>processing level</strong> and products you would like delivered to you:</legend>
+                      <small>
+                      <p>(click <a href="sensors.html" target="_blank" rel="noopener noreferrer">here</a> or click individual products for information).</p>
+                      </small>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="prodRaw" id="prodRaw">
+                        <label class="form-check-label" for="prodRaw"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoRaw"> Raw values</a> </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="prodCalRef" id="prodCalRef">
+                        <label class="form-check-label" for="prodCalRef"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoCalRef"> Calibrated </a>reflectance</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="prodTemp" id="prodTemp">
+                        <label class="form-check-label" for="prodTemp"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoTemp"> Temperature values</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="prodOrtho" id="prodOrtho">
+                        <label class="form-check-label" for="prodOrtho"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#inforOrtho"> Orthomosaic</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="prodClassImg" id="prodClassImg">
+                        <label class="form-check-label" for="prodClassImg"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoClassImg"> Classified image</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="prodPCloud" id="prodPCloud">
+                        <label class="form-check-label" for="prodPCloud"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoPCloud"> Point cloud</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="prodDSM" id="prodDSM">
+                        <label class="form-check-label" for="prodDSM"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoDSM"> Digital surface model</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" name="prodDEM" id="prodDEM">
+                        <label class="form-check-label" for="prodDEM"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoDEM"> Digital elevation model (bare-earth model)</a></label>
+                      </div>
+                      <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" value="" name="prodOther" id="prodOther">
+                        <label class="form-check-label" for="prodOther"> Other (use the Additional Comments area below to provide details)</label>
+                      </div>
+                    </fieldset>
                   </div>
                 </div>
               </div>
               <div class="col-xl-15 mb-1">
                 <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
                   <div class="form-group pb-3">
-                    <label class="text-dark mb-2" for="">Please indicate if the collection requires a United States federally compliant drone (DoD Blue List):</label>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="optionsRadios" id="option1" value="option1">
-                      <label class="text-dark form-check-label" for="option1">yes</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="optionsRadios" id="option2" value="option2">
-                      <label class="text-dark form-check-label" for="option2">no</label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="optionsRadios" id="option3" value="option3" checked>
-                      <label class="text-dark form-check-label" for="option3">unknown</label>
-                    </div>
+                    <fieldset>
+                      <legend class="legend-small mb-2">Provide the location where the collection needs to be conducted:</legend>
+                      <div class="col-12">
+                        <textarea class="form-control border-primary bg-transparent" name="areaLocation" id="areaLocation" cols="30" rows="3" placeholder="location*"></textarea>
+                      </div>
+                      <small>
+                      <p class="mb-0">You can upload a kml/kmz containing the limits for the area to be flown here:</p>
+                      </small>
+                      <div class="col-12">
+                        <button type="button" class="btn btn-light text-dark w-30 text-center">upload kml/kmz ...</button>
+                      </div>
+                    </fieldset>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-15 mb-2">
-                <p class="text-dark mb-0">Provide the location where the collection needs to be conducted:</p>
-                <div class="col-12">
-                  <textarea class="form-control border-primary bg-transparent text-dark" name="text" id="area-text" cols="30" rows="2" placeholder="location*"></textarea>
+				
+              <div class="col-xl-15 mb-1">
+                <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
+                  <div class="form-group pb-3">
+                    <fieldset>
+                      <p class="mb-0">Please indicate date or period the collection needs to be conducted, including if multiple collections are needed:</p>
+                    <div class="col-12">
+                      <textarea class="form-control border-primary bg-transparent" name="datePeriod" id="datePeriod" cols="30" rows="3" placeholder="date/period"></textarea>
+                    </div>
+                    </fieldset>
+                  </div>
                 </div>
-                <p class="text-dark mb-0">You can upload a kml/kmz with limits of the area to be flown here:</p>
               </div>
+				
+
               <div class="col-xl-15 mb-2">
-                <p class="text-dark mb-0">Please indicate date or period for the collection, including if&nbsp;multiple collections are needed:</p>
-                <div class="col-12">
-                  <textarea class="form-control border-primary bg-transparent text-dark" name="text" id="area-text" cols="30" rows="2" placeholder=""></textarea>
+                <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
+                  <div class="form-group pb-3">
+                    <fieldset>
+                      <legend class="legend-small mb-2">Please indicate if the collection requires a United States federally compliant drone (DoD Blue List):</legend>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="optionsBlueList" id="blueListYes" value="yes">
+                        <label class="form-check-label" for="option1">yes</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="optionsBlueList" id="blueListNo" value="no">
+                        <label class="form-check-label" for="option2">no</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="optionsBlueList" id="blueListUnknown" value="unknown" checked>
+                        <label class="form-check-label" for="option3">unknown</label>
+                      </div>
+                    </fieldset>
+                  </div>
                 </div>
               </div>
               <div class="col-xl-15 mb-1">
-                <p class="text-dark mb-0"><strong>Additional Comments</strong> (use the space below to provide any additional information or details your consider relevant to the drone data collection and the products you need).</p>
+                <p class="mb-0"><strong>Additional Comments</strong> (use the space below to provide any additional information or details your consider relevant to the drone data collection and the products you need).</p>
                 <div class="col-12">
-                  <textarea class="form-control border-primary bg-transparent text-dark" name="text" id="area-text" cols="30" rows="5" placeholder=""></textarea>
+                  <textarea class="form-control border-primary bg-transparent" name="additionalComm" id="additionalComm" cols="30" rows="5" placeholder="comments"></textarea>
                 </div>
               </div>
               <div class="col-12">
-                <button type="button" class="btn btn-primary text-primary w-100 py-3 px-5">SUBMIT</button>
+                <button type="submit" class="btn btn-light text-primary w-100 py-3 px-5">SUBMIT</button>
               </div>
             </div>
           </form>
@@ -236,21 +287,6 @@
 <!-- End footer --> 
 <!-- Footer End --> 
 
-<!-- Copyright Start -->
-<div class="container-fluid copyright py-4">
-  <div class="container">
-    <div class="row g-4 align-items-center">
-      <div class="col-md-6 text-center text-md-start mb-md-0"> <span class="text-white"><a href="#"><i class="fas fa-copyright text-light me-2"></i>Your Site Name</a>, All right reserved.</span> </div>
-      <div class="col-md-6 text-center text-md-end text-white"> 
-        <!--/*** This template is free as long as you keep the below author’s credit link/attribution link/backlink. ***/--> 
-        <!--/*** If you'd like to use the template without the below author’s credit link/attribution link/backlink, ***/--> 
-        <!--/*** you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". ***/--> 
-        Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a> Distributed By <a class="border-bottom" href="https://themewagon.com">ThemeWagon</a> </div>
-    </div>
-  </div>
-</div>
-<!-- Copyright End --> 
-
 <!-- Back to Top --> 
 <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a> 
 
@@ -263,7 +299,7 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p class="text-dark mb-3">Geotagged RGB images can be collected in compressed and/or raw format. Image acquisition possibilities include the cameras and drones below:</p>
+        <p class="mb-3">Geotagged RGB images can be collected in compressed and/or raw format. Image acquisition possibilities include the cameras and drones below:</p>
         <ul>
           <li>20 MP camera 4/3 CMOS sensor (DJI Mavic 3)</li>
           <li>20 MP camera 4/3 CNOS sensor (DJI Mavic 3M, images can be collected simultaneous to multispectral data).</li>
@@ -285,11 +321,11 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <p class="text-dark mb-3">Geotagged multispectral images can be collected in lossless compressed format. Image acquisition possibilities include the camera and drone below:</p>
+        <p class="mb-3">Geotagged multispectral images can be collected in lossless compressed format. Image acquisition possibilities include the camera and drone below:</p>
         <ul>
           <li>5 MP, spectral regions: green, red, red edge, near infrared;  (DJI Mavic 3M, images can be collected simultaneous to 20 MP RGB data).</li>
         </ul>
-        <p class="text-dark mb-3">Collections include data from a downwelling radiation sensor and a ground calibration panel (optional)</p>
+        <p class="mb-3">Collections include data from a downwelling radiation sensor and a ground calibration panel (optional)</p>
         <a href="https://ag.dji.com/mavic-3-m/specs">Further sensor details (external link)</a> </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
