@@ -108,19 +108,19 @@
                       <p>(click <a href="sensors.html" target="_blank" rel="noopener noreferrer">here</a> or click individual products for information).</p>
                       </small>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="dataProd[]" value="prodRaw">
+                        <input class="form-check-input" type="checkbox" name="dataProd[]" value="prodRaw" id="prodRaw">
                         <label class="form-check-label" for="prodRaw"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoRaw"> Raw values</a> </label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="dataProd[]" value="prodCalRef">
+                        <input class="form-check-input" type="checkbox" name="dataProd[]" value="prodCalRef" id="prodCalRef">
                         <label class="form-check-label" for="prodCalRef"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoCalRef"> Calibrated reflectance</a></label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="dataProd[]" value="prodTemp">
+                        <input class="form-check-input" type="checkbox" name="dataProd[]" value="prodTemp" id="prodTemp">
                         <label class="form-check-label" for="prodTemp"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoTemp"> Temperature values</a></label>
                       </div>
                       <div class="form-check">
-                        <input class="form-check-input" type="checkbox" name="dataProd[]" value="prodOrtho">
+                        <input class="form-check-input" type="checkbox" name="dataProd[]" value="prodOrtho" id="prodOrtho">
                         <label class="form-check-label" for="prodOrtho"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#inforOrtho"> Orthomosaic</a></label>
                       </div>
                       
@@ -136,7 +136,7 @@
                     <fieldset>
                       <legend class="legend-small mb-2">Select the <strong>type of data</strong> you need.</legend>
                       <small>
-                      <p>(click <a href="sensors.html" target="_blank" rel="noopener noreferrer">here</a> for information on drones and sensors. Click individual sensors for sensor-specific capabilities).</p>
+                      <p>(click <a href="sensors.html" target="_blank" rel="noopener noreferrer">here</a> for information on drones and sensors. Click sensor names for sensor-specific capabilities).</p>
                       </small>
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" name="sensorRGB" id="sensorRGB">
@@ -342,6 +342,7 @@
     </div>
   </div>
 </div>
+	
 <div class="modal fade" id="infoXS4" tabindex="-1" aria-labelledby="infoXS4Label" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -362,7 +363,112 @@
     </div>
   </div>
 </div>
+	
+<div class="modal fade" id="infoXS5" tabindex="-1" aria-labelledby="infoXS5Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="infoXS5Label">5-Band Multispectral Sensor</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="mb-3">Geotagged multispectral images can be collected in lossless compressed format. Image acquisition possibilities include the camera and drone below:</p>
+        <ul>
+          <li>5 MP, spectral regions: green, red, red edge, near infrared;  (DJI Mavic 3M, images can be collected simultaneous to 20 MP RGB data).</li>
+        </ul>
+        <p class="mb-3">Collections include data from a downwelling radiation sensor and a ground calibration panel (optional)</p>
+        <a href="https://ag.dji.com/mavic-3-m/specs">Further sensor details (external link)</a> </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+	
+<div class="modal fade" id="infoXS10" tabindex="-1" aria-labelledby="infoXS10Label" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="infoXS10Label">5-Band Multispectral Sensor</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="mb-3">Geotagged multispectral images can be collected in lossless compressed format. Image acquisition possibilities include the camera and drone below:</p>
+        <ul>
+          <li>5 MP, spectral regions: green, red, red edge, near infrared;  (DJI Mavic 3M, images can be collected simultaneous to 20 MP RGB data).</li>
+        </ul>
+        <p class="mb-3">Collections include data from a downwelling radiation sensor and a ground calibration panel (optional)</p>
+        <a href="https://ag.dji.com/mavic-3-m/specs">Further sensor details (external link)</a> </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>	
 
+<div class="modal fade" id="infoHS" tabindex="-1" aria-labelledby="infoHSLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="infoHSLabel">5-Band Multispectral Sensor</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="mb-3">Geotagged multispectral images can be collected in lossless compressed format. Image acquisition possibilities include the camera and drone below:</p>
+        <ul>
+          <li>5 MP, spectral regions: green, red, red edge, near infrared;  (DJI Mavic 3M, images can be collected simultaneous to 20 MP RGB data).</li>
+        </ul>
+        <p class="mb-3">Collections include data from a downwelling radiation sensor and a ground calibration panel (optional)</p>
+        <a href="https://ag.dji.com/mavic-3-m/specs">Further sensor details (external link)</a> </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="infoTIR" tabindex="-1" aria-labelledby="infoTIRLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="infoTIRLabel">5-Band Multispectral Sensor</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="mb-3">Geotagged multispectral images can be collected in lossless compressed format. Image acquisition possibilities include the camera and drone below:</p>
+        <ul>
+          <li>5 MP, spectral regions: green, red, red edge, near infrared;  (DJI Mavic 3M, images can be collected simultaneous to 20 MP RGB data).</li>
+        </ul>
+        <p class="mb-3">Collections include data from a downwelling radiation sensor and a ground calibration panel (optional)</p>
+        <a href="https://ag.dji.com/mavic-3-m/specs">Further sensor details (external link)</a> </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="infoLiDAR" tabindex="-1" aria-labelledby="infoLiDARLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="infoLiDARLabel">5-Band Multispectral Sensor</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="mb-3">Geotagged multispectral images can be collected in lossless compressed format. Image acquisition possibilities include the camera and drone below:</p>
+        <ul>
+          <li>5 MP, spectral regions: green, red, red edge, near infrared;  (DJI Mavic 3M, images can be collected simultaneous to 20 MP RGB data).</li>
+        </ul>
+        <p class="mb-3">Collections include data from a downwelling radiation sensor and a ground calibration panel (optional)</p>
+        <a href="https://ag.dji.com/mavic-3-m/specs">Further sensor details (external link)</a> </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>		
+	
 <!-- JavaScript Libraries --> 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> 
