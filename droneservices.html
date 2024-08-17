@@ -83,7 +83,7 @@
 			<p class="fs-2 text-uppercase text-primary">Get In Touch</p>
 -->
           <p class="text-dark mb-4">Use this form to send us a request for data collection. Our team will analyze the request and contact you for further coordination.</p>
-          <form action="https://fabform.io/f/YfU7ii2" method="post">
+          <form action="https://fabform.io/f/YfU7ii2" enctype="multipart/form-data" method="post">
             <div class="row gy-2 gx-4">
               <h5 class="display-7 mb-1">Requestor</h5>
               <div class="col-xl-20">
@@ -205,6 +205,9 @@
                       <div class="col-12">
                         <button type="button" class="btn btn-light text-dark w-30 text-center">upload kml/kmz ...</button>
                       </div>
+						<input name="files" type="file" accept=".kml, .kmz">
+						
+						
                     </fieldset>
                   </div>
                 </div>
