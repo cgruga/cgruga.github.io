@@ -103,6 +103,37 @@
                 <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
                   <div class="form-group pb-3">
                     <fieldset>
+                      <legend class="legend-small mb-2">Select image/data <strong>processing level</strong> and products you would like delivered to you:</legend>
+                      <small>
+                      <p>(click <a href="sensors.html" target="_blank" rel="noopener noreferrer">here</a> or click individual products for information).</p>
+                      </small>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="dataProd[]" value="prodRaw">
+                        <label class="form-check-label" for="prodRaw"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoRaw"> Raw values</a> </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="dataProd[]" value="prodCalRef">
+                        <label class="form-check-label" for="prodCalRef"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoCalRef"> Calibrated reflectance</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="dataProd[]" value="prodTemp">
+                        <label class="form-check-label" for="prodTemp"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoTemp"> Temperature values</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="dataProd[]" value="prodOrtho">
+                        <label class="form-check-label" for="prodOrtho"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#inforOrtho"> Orthomosaic</a></label>
+                      </div>
+                      
+                    </fieldset>
+                  </div>
+                </div>
+              </div>				
+				
+				
+              <div class="col-xl-15">
+                <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
+                  <div class="form-group pb-3">
+                    <fieldset>
                       <legend class="legend-small mb-2">Select the <strong>type of data</strong> you need.</legend>
                       <small>
                       <p>(click <a href="sensors.html" target="_blank" rel="noopener noreferrer">here</a> for information on drones and sensors. Click individual sensors for sensor-specific capabilities).</p>
@@ -157,7 +188,7 @@
                       </div>
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" name="prodCalRef" id="prodCalRef">
-                        <label class="form-check-label" for="prodCalRef"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoCalRef"> Calibrated </a>reflectance</label>
+                        <label class="form-check-label" for="prodCalRef"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoCalRef"> Calibrated reflectance</a></label>
                       </div>
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" name="prodTemp" id="prodTemp">
@@ -196,13 +227,13 @@
                   <div class="form-group pb-3">
                     <fieldset>
                       <legend class="legend-small mb-2">Provide the location where the collection needs to be conducted:</legend>
-                      <div class="col-12">
+                      <div class="col-12 mb-2">
                         <textarea class="form-control border-primary bg-transparent" name="areaLocation" id="areaLocation" cols="30" rows="3" placeholder="location"></textarea>
                       </div>
                       <small>
-                      <p class="mb-0">You can upload a kml/kmz containing the limits for the area to be flown here:</p>
+                      <p class="mb-2">You can upload a kml/kmz containing the limits for the area to be flown here:</p>
                       </small>
-					<input class="btn btn-light text-primary w-100 py-3 px-5" name="files" type="file" accept=".kml, .kmz">
+					<input name="files" type="file" accept=".kml, .kmz">
                     </fieldset>
                   </div>
                 </div>
