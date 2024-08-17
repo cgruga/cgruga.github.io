@@ -33,7 +33,7 @@
         autoplay: true,
 		autoplayTimeout:15000,
 //        smartSpeed: 1000,
-        dots: false,
+        dots: true,
         loop: true,
         nav : true,
         navText : [
