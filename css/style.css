@@ -86,7 +86,8 @@
 .btn.btn-primary:hover {
     background-color: var(--bs-light) !important;
     color: var(--bs-primary) !important;
-	
+	border: 1px solid var(--bs-primary);
+
 	/*
     box-shadow: inset 300px 0 0 0 var(--bs-primary) !important;
 	transition: all 0.5s ease; *//* Ensure smooth transition on hover as well */
@@ -111,7 +112,7 @@
 }
 
 .btn.btn-clear {
-   	background-color: transparent;
+	background-color: transparent;
     color: var(--bs-primary);
     border: 1px solid var(--bs-primary);
     box-shadow: inset 0 0 0 0 var(--bs-primary);
@@ -566,93 +567,6 @@
 /*** Single Page Hero Header End ***/
 
 
-/*** Service Start ***/
-.service .service-item {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .2) ;
-}
-
-.service .service-item .service-img {
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.service .service-item .service-img img {
-    transition: 0.5s;
-}
-
-.service .service-item .service-img::before {
-    width: 100%;
-    height: 0;
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-    transition: 0.5s;
-    z-index: 5;
-    
-}
-
-.service .service-item:hover .service-img::before {
-    height: 100%;
-    background: rgba(21, 185, 217, .1);	
-}
-
-.service .service-item .service-img:hover img {
-    transform: scale(1.1);
-}
-
-.service .service-item .service-content {
-    position: relative;
-    z-index: 2;
-
-}
-
-.service .service-item .service-content p {
-    margin-bottom: 1rem;
-    flex-grow: 1;
-	font-size: 0.9rem; /* Adjust font size to be slightly smaller */
-}
-
-.service .service-item .service-content::before {
-    width: 100%;
-    height: 8px;
-    position: absolute;
-    content: "";
-    bottom: 0;
-    left: 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background: rgba(21, 185, 217, .5);
-    transition: 0.5s;
-    z-index: 3;
-}
-
-.service .service-item:hover .service-content::before {
-	background: rgba(21, 185, 217, .1);
-    height: 100%;
-}
-
-.service .service-item .service-content .service-content-inner {
-    transition: 0.5s;
-}
-
-
-.service .service-item:hover .service-content .service-content-inner {
-	position: relative;
-    color: var(--bs-white) !important;
-    z-index: 9;
-}
-
-.service .service-item:hover .service-content .service-content-inner h5 {
-    color: var(--bs-primary);
-}
-
-
-/*** Service End ***/
-
 /*** About Start ***/
 .about .about-img {
     position: relative;
@@ -683,7 +597,178 @@
     letter-spacing: 4px;
 }
 
+.about .btn {
+    width: auto; /* Prevents the button from stretching */
+    flex-grow: 0; /* Ensures the button does not grow to fill the available space */
+    align-self: flex-start; /* Aligns the button to the left within its container */
+	font-size: 0.7rem; /* Adjust font size to be slightly smaller */
+}
+
 /*** About End ***/
+
+
+
+/*** News Start ***/
+
+.news .news-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+	box-shadow: 0 0 45px rgba(0, 0, 0, .2) ;
+}
+
+.news .news-img {
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+	border: 1px solid var(--bs-primary);
+	border-bottom: 0;
+}
+
+.news .news-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 20px; /* Ensure consistent text alignment */
+}
+
+.news .news-content p {
+    margin-bottom: 1rem;
+    flex-grow: 1;
+	font-size: 0.9rem; /* Adjust font size to be slightly smaller */
+}
+
+.news .news-content a.mt-auto {
+    margin-top: auto;
+}
+
+.news .news-img img {
+    transition: 0.5s;
+}
+
+.news .news-img:hover img {
+    transform: scale(1.1);
+}
+
+.news .news-item .news-content {
+    background: var(--bs-light);
+    border: 1px solid var(--bs-primary);
+    border-top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.news .news-item:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .6);
+}
+
+.news .news-item .news-content .btn {
+    width: auto; /* Prevents the button from stretching */
+    flex-grow: 0; /* Ensures the button does not grow to fill the available space */
+    align-self: flex-start; /* Aligns the button to the left within its container */
+	font-size: 0.7rem; /* Adjust font size to be slightly smaller */
+}
+
+/*** News End ***/
+
+
+
+/*** project Start ***/
+
+
+.project .project-item {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+}
+
+.project .project-img {
+    position: relative;
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    border: 1px solid var(--bs-primary);
+    border-bottom: 0;
+}
+
+.project .project-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding-top: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.project .project-content p {
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    font-size: 0.9rem;
+	min-height: 6rem;
+}
+
+.project .project-content h5 {
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    font-size: 1.15rem;
+	min-height: 4.5rem;	/* Adjust height as needed */
+	
+}
+
+.project .project-content a.mt-auto {
+    margin-top: auto;
+}
+
+.project .project-img img {
+    transition: transform 0.5s;
+}
+
+.project .project-img:hover img {
+    transform: scale(1.1);
+}
+
+.project .project-item .project-content {
+    background: var(--bs-light);
+    border: 1px solid var(--bs-primary);
+    border-top: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.project .project-item .project-content .btn {
+    width: auto;
+    flex-grow: 0;
+    align-self: flex-start;
+    font-size: 0.7rem;
+}
+
+
+.project .project-item:hover .project-content {
+/*    background-color: var(--bs-primary);*/
+    background: rgba(7, 60, 71, 0);	
+/*    color: var(--bs-white);*/
+}
+
+/* Add hover effect for content */
+.project .project-item:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .6);
+}
+
+/*
+.project .project-item:hover .project-content p,
+.project .project-item:hover .project-content a {
+    color: var(--bs-white);
+}
+*/
+
+.project .project-item:hover .project-content h5 {
+    color: var(--bs-primary);
+}
+
+
+/*** project End ***/
+
 
 /*** Feature Start ***/
 .feature .feature-item {
@@ -1177,98 +1262,6 @@
 /*** Blog End ***/
 
 
-.blog .blog-item {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.blog .blog-img {
-    position: relative;
-    overflow: hidden;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
-}
-
-.blog .blog-centent {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding-top: 20px; /* Ensure consistent text alignment */
-}
-
-.blog .blog-centent p {
-    margin-bottom: 1rem;
-    flex-grow: 1;
-	font-size: 0.9rem; /* Adjust font size to be slightly smaller */
-}
-
-.blog .blog-centent a.mt-auto {
-    margin-top: auto;
-}
-
-.blog .blog-img img {
-    transition: 0.5s;
-}
-
-.blog .blog-img:hover img {
-    transform: scale(1.1);
-}
-
-.blog .blog-item .blog-centent {
-    background: var(--bs-light);
-    border: 1px solid var(--bs-primary);
-    border-top: 0;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-/* -----------------------*/
-
-
-
-
-.icard .icard-item {
-    display: flex;
-    flex-direction: column;
-    height: 500px;
-    background-size: cover; /* Ensure the image covers the entire card */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden; /* Prevent content from overflowing */
-    position: relative;
-    color: #fff; /* Set text color to white for contrast */
-    transition: transform 0.3s ease; /* Smooth transition for hover effect */
-}
-
-.icard .icard-content {
-    position: absolute; /* Position content absolutely within the card */
-    bottom: 0; /* Align content to the bottom */
-    background: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background for readability */
-    width: 100%; /* Ensure the content spans the entire width of the card */
-    padding: 20px;
-    border-bottom-left-radius: 10px; /* Rounded corners */
-    border-bottom-right-radius: 10px; /* Rounded corners */
-	font-size: 0.9rem; /* Adjust font size to be slightly smaller */
-
-}
-
-.icard .icard-content p, .icard .icard-content a {
-    color: #fff; /* Ensure all text is white */
-}
-
-.icard .icard-item:hover {
-/*    filter: grayscale(100%);
-    transition: filter 0.3s ease; */
-
-	transform: scale(1.05); 
-    transition: transform 0.3s ease;
-
-}
-
-
-
 /*** Contact Start ***/
 .contact {
     background: linear-gradient(rgba(21, 185, 217, 0.9), rgba(21, 185, 217, 0.9)), url(../img/carousel-1.jpg);
@@ -1405,4 +1398,5 @@
   font-size: 1rem; /* Adjust this value as needed */
   font-weight: normal; /* Optional: adjust font weight */
 }
+
 
