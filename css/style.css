@@ -543,12 +543,29 @@
 
 
 /*** Single Page Hero Header Start ***/
+
 .bg-breadcrumb {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    position: relative;
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
-    padding: 160px 0 60px 0;
+	padding: 160px 0 60px 0;
+}
+
+.bg-breadcrumb::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust the alpha value for desired darkness */
+    z-index: 1;
+}
+
+.bg-breadcrumb .container {
+    position: relative;
+    z-index: 2; /* To ensure content appears above the overlay */
 }
 
 
@@ -557,6 +574,7 @@
 	font-weight: 300;    
 }
 
+/* previous */
 /*.bg-breadcrumb {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/carousel-2.jpg);
     background-position: center center;
@@ -966,7 +984,7 @@
 
 /*** Appointment Start ***/
 .appointment {
-    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/carousel-2.jpg);
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url(../img/ot/river-network.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1130,7 +1148,7 @@
     color: var(--bs-dark);
     /*margin-bottom: 1rem;*/
     flex-grow: 0;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     min-height: 1.5rem; 
 	font-weight: bold;
 }
@@ -1141,6 +1159,10 @@
     flex-grow: 0;
     font-size: 0.9rem;
     min-height: 3rem; 
+}
+
+.team .team-content .email-link {
+    font-size: 0.8rem;
 }
 
 .team .team-content a.mt-auto {
@@ -1619,7 +1641,7 @@
 
 /*** Footer Start ***/
 .footer {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/carousel-2.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../img/ot/river-network.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1725,4 +1747,19 @@ html {
   scroll-padding-top: 80px; /* Adjust based on the height of your fixed header */
 }
 
+
+.custom-img-size {
+            max-width: 250px; /* Set max width */
+            height: auto;    /* Maintain aspect ratio */
+        }
+
+.centered-figure {
+	margin: 0 auto; /* Centers the figure horizontally */
+	text-align: center; /* Centers the caption text */
+}
+
+
+.display-13 {
+	font-size: 1.3rem; /* Adjust font size to be slightly smaller */	
+}
 
