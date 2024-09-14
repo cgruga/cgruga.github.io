@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Center for Geospatial Research</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="research geography geographic information systems remote sensing drones" name="keywords">
+<meta content="Center for Geospatial Research" name="description">
+<meta content="Sergio Bernardes" name="author">
+
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!--
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+-->
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&family=Roboto:wght@100;300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Icon Font Stylesheet -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css"/>
+<!--	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Libraries Stylesheet -->
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Template Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- Spinner Start -->
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+  <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status"> <span class="sr-only">Loading...</span> </div>
+</div>
+<!-- Spinner End --> 
+
+<!-- Navbar & Hero Start -->
+<div class="container-fluid position-relative p-0"> 
+  
+  <!-- Start navigation bar -->
+  <div id="nav-placeholder"></div>
+  <!-- End navigation bar --> 
+  
+</div>
+<!-- Navbar End --> 
+
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb bg-primary">
+  <div class="container text-center py-5" style="max-width: 900px;">
+    <h3 class="text-white display-4 mb-4 wow fadeIn" data-wow-delay="0.3s">Our Research</h3>
+  </div>
+</div>
+
+<!-- Header End --> 
+
+<!-- About Start -->
+<div class="container-fluid about bg-light py-5">
+  <div class="container py-5">
+    <div class="row g-5 align-items-start">
+      <div class="col-lg-3 wow fadeIn" data-wow-delay="0.2s">
+        <div class="about-img pb-5 ps-5"> <img src="img/400x400/dmishra.jpeg" class="img-fluid rounded w-100" style="object-fit: cover;" alt="Image">
+          <p class="mt-4">Deepak Mishra<br>
+            Geography-Geology Bldg<br>
+            210 Field Street,<br>
+            Room 212B<br>
+            Athens, Georgia</p>
+          <a href="mailto:dmishra@uga.edu"><i class="fas fa-envelope me-2"></i>dmishra@uga.edu</a> </div>
+      </div>
+      <div class="col-lg-7 wow fadeIn" data-wow-delay="0.4s">
+        <div class="section-title text-start mb-0">
+          <h4 class="sub-title pe-3 mb-0">Urban Heat Island</h4>
+          <h3 class=" mt-3 mb-4">A Sensor Cloud-based Community-Centric Approach for Analyzing and Mitigating Urban Heat Hazards</h3>
+          <div class = "mt-5">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sykr9ymwrZQ?si=9XDMx8YXgelBcnwT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <p class="mt-4 mb-4">Extreme heat in light of climate change is increasingly threatening the health and comfort of urban residents. Understanding spatio-temporal patterns of heat exposure is a critical factor in directing mitigation measures. Current heat vulnerability indices provide insight into heat sensitivities within given communities but do not account for the dynamic nature of the human movement as people travel for different activities. High-quality temperature data at a finer spatio-temporal scale is critical for analyzing the risk of heat exposure and hazards in urban environments. The variability of urban landscapes makes cities a challenging environment for quantifying heat exposure. Most of the existing heat hazard studies have inherent limitations on two fronts; first, the spatio-temporal granularities are too coarse, and second, the inability to track the ambient air temperature (AAT) instead of land surface temperature (LST). The two primary objectives of this project were to develop a new sensing framework to acquire hyperlocal ambient air temperature (AAT) from urban areas and develop a heat exposure model for urban residents.</p>
+          <figure class="figure float-end ps-4 clearfix" style="max-width: 300px;"> <a href="#" data-bs-toggle="modal" data-bs-target="#imageModal" 
+           data-bs-image="img/970x970/scout-project.jpg" 
+           data-bs-caption="High Resolution Exposure Temperature Map of Athens, Clarke County."
+               class="text-decoration-none text-dark."> <img src="img/970x970/scout-project.jpg" class="figure-img img-fluid rounded" alt="Placeholder Image">
+            <figcaption class="figure-caption"><small>High Resolution Exposure Temperature Map of Athens, Clarke County.</small> </figcaption>
+            </a> </figure>
+          <p class="mb-4">First, we investigated an integrated approach for mapping urban heat hazards by harnessing a diverse set of high-resolution measurements, including both ground-based and satellite-based temperature data. We mounted vehicle-borne mobile sensors on city buses to collect high-frequency temperature data. Our research also incorporated key biophysical parameters and Landsat-8 satellite LST data into machine learning modeling to map the hyperlocal variability of heat hazards over areas not covered by the buses. The vehicle-borne temperature sensor data showed large temperature differences within the city, with the largest variations of up to 10 °C and morning-afternoon diurnal changes at a magnitude around 20 °C. Random Forest modeling on noontime (11:30 am – 12:30 pm) data to predict AAT produced accurate results with a mean absolute error of 0.29 °C and successfully showcased the enhanced granularity in urban heat hazard mapping. These maps revealed well-defined hyperlocal variabilities in AAT, which were not evident with other research approaches. Urban core and dense residential areas revealed larger than 5 °C AAT differences from their nearby green spaces. </p>
+			<p class="mb-4">Second, from the high resolution, AAT data from Objective 1, a new Dynamic urban Thermal Exposure index (DTEx) was developed that captures the varying heat exposure within urban environments. We developed the DTEx to understand human heat exposure patterns in a mid-sized city. This index incorporates the human movement pattern and the heat hazard pattern obtained via novel and advanced techniques. We generated the human movement pattern from large-scale, anonymized smartphone location data. DTEx between 2 and 12, indicating low to high thermal exposures. Several high-temperature spots associated with a large volume of foot traffic are successfully identified through this model. We observed the hottest spots at shopping plazas but not specifically in the urban center. During the selected football gameday, the exposure index surged across most places near the football stadium but was reduced considerably further away. The sensing framework developed in this study can be easily implemented in other urban areas, and findings from this study will be beneficial in understanding the heat vulnerabilities of individual communities.</p>
+          <h4 class="mt-5 mb-3">Funding and Collaborators:</h4>
+          <ul>
+            <li>
+              <p class="mb-4"> National Science Foundation </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About End --> 
+
+<!-- Footer Start -->
+<div id="foot-placeholder"> </div>
+<!-- Footer End --> 
+
+<!-- Back to Top --> 
+<a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a> 
+
+<!-- Modal Structure -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header"> 
+        <!--
+<h5 class="modal-title" id="imageModalLabel">Image and Caption</h5>
+-->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center"> <img src="" id="modalImage" class="img-fluid rounded mb-3" alt="Modal Image">
+        <p id="modalCaption"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript Libraries --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> 
+<script src="lib/wow/wow.min.js"></script> 
+<script src="lib/easing/easing.min.js"></script> 
+<script src="lib/waypoints/waypoints.min.js"></script> 
+<script src="lib/owlcarousel/owl.carousel.min.js"></script> 
+<script>
+			$.get("navigation.html", function(data){
+				$("#nav-placeholder").replaceWith(data);
+			});
+		</script> 
+<script>
+			$.get("footer.html", function(data){
+				$("#foot-placeholder").replaceWith(data);
+			});
+		</script> 
+
+<!-- Template Javascript --> 
+<script src="js/main.js"></script> 
+<script src="js/modal-handler.js"></script> <!-- Adjust the path as needed -->
+
+</body>
+</html>
