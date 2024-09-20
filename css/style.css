@@ -477,7 +477,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, .2);
 }
 
 .header-carousel .header-carousel-item .carousel-caption .carousel-caption-content {
@@ -691,7 +691,7 @@
     overflow: hidden;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
-	border: 1px solid var(--bs-primary);
+	border: 0px solid var(--bs-primary);
 	border-bottom: 0;
 }
 
@@ -725,8 +725,9 @@
 }
 
 .news .news-item .news-content {
-    background: var(--bs-light);
-    border: 1px solid var(--bs-primary);
+/*    background: var(--bs-light); */
+	background: #F2F8FF;
+    border: 0px solid var(--bs-primary);
     border-top: 0;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
