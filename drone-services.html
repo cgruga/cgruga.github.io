@@ -50,9 +50,17 @@
 <!-- Navbar End --> 
 
 <!-- Header Start -->
-<div class="container-fluid bg-breadcrumb bg-primary">
-  <div class="container text-center py-5" style="max-width: 900px;">
-    <h3 class="text-white display-5 mb-4 wow fadeIn" data-wow-delay="0.3s">Drone Services</h3>
+<div class="container-fluid bg-breadcrumb position-relative">
+  <video autoplay muted loop playsinline class="w-100 h-100 position-absolute top-0 start-0" style="object-fit: cover;">
+    <source src="videos/dji_0293.mp4" type="video/mp4">
+    <!-- Fallback for unsupported video formats -->
+    Your browser does not support the video tag.
+  </video>
+  <div class="overlay"></div>
+  <!-- Overlay for better text contrast -->
+  <div class="container text-center py-5 position-relative" style="max-width: 900px; z-index: 2;">
+    <h4 class="text-start text-white display-5 mb-2 wow fadeIn" data-wow-delay="0.3s">Our Students</h4>
+    <h5 class="text-start text-white wow fadeIn" data-wow-delay="0.3s">Fostering growth and excellence through mentorship and high-quality research to address real-world problems.</h5>
   </div>
 </div>
 <!-- Header End --> 
