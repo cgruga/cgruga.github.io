@@ -624,6 +624,10 @@
 	font-size: 0.85rem; /* Adjust font size to be slightly smaller */	
 }
 
+.about .project-reference-item {
+	font-size: 0.85rem; /* Adjust font size to be slightly smaller */	
+}
+
 .about .btn {
     width: auto; /* Prevents the button from stretching */
     flex-grow: 0; /* Ensures the button does not grow to fill the available space */
@@ -1763,4 +1767,7 @@ html {
 .display-13 {
 	font-size: 1.3rem; /* Adjust font size to be slightly smaller */	
 }
+
+
+
 
