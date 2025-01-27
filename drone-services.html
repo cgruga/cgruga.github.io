@@ -75,7 +75,7 @@
         <div class="section-title text-start pt-5">
           <h2 class="display-7 mb-4">Aerial Perspectives</h2>
           <p class="mb-4">CGR is equipped with a variety of drones and remote sensors that can be requested and tasked to collect data in support of investigations conducted by other groups. Available systems include United States federally compliant drones that have been cleared by the Department of Defense (Blue UAS/Blue List).</p>
-			<div class="about-img pb-4 ps-5 pe-5"> <img src="img/ot/blue-list.jpg" class="img-fluid rounded w-100" style="object-fit: cover;" alt="Blue List"></div>		
+          <div class="about-img pb-4 ps-5 pe-5"> <img src="img/ot/blue-list.jpg" class="img-fluid rounded w-100" style="object-fit: cover;" alt="Blue List"></div>
           <p class="mb-4">Check available drones and sensors <a href="sensors.html">here</a> and then use this page to provide information on your drone data collection needs and to request information on system availability and collection costs.</p>
           <div class="row g-4 justify-content-center">
             <div class="col-sm-10">
@@ -103,12 +103,11 @@
       <div class="col-lg-6 wow fadeIn" data-wow-delay="0.3s">
         <div class="appointment-form bg-light rounded p-5">
           <h5 class="sub-title pe-3 mb-0">Request Drone Service</h5>
-          
-          <!--
-			<p class="fs-2 text-uppercase text-primary">Get In Touch</p>
--->
           <p class="text-dark mb-4">Use this form to send us a request for data collection. Our team will analyze the request and contact you for further coordination.</p>
-          <form action="https://fabform.io/f/YfU7ii2" enctype="multipart/form-data" method="post">
+          <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="25ae5312-675a-4bc5-b1b5-d436513df77a">
+            <input type="hidden" name="subject" value="CGR: drone service request">
+            <input type="hidden" name="redirect" value="https://cgr.uga.edu/thankyou.html">
             <div class="row gy-2 gx-4">
               <h5 class="display-7 mb-1">Requestor</h5>
               <div class="col-xl-20">
@@ -170,7 +169,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-xl-15">
+             <div class="col-xl-15">
                 <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
                   <div class="form-group pb-3">
                     <fieldset>
@@ -218,6 +217,7 @@
                   </div>
                 </div>
               </div>
+				
               <div class="col-xl-15 mb-1">
                 <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
                   <div class="form-group pb-3">
@@ -227,13 +227,14 @@
                         <textarea class="form-control border-primary bg-transparent" name="areaLocation" id="areaLocation" cols="30" rows="3" placeholder="location"></textarea>
                       </div>
                       <small>
-                      <p class="mb-2">You can upload a kml/kmz containing the limits for the area to be flown here:</p>
+                      <p class="mb-2">If you have a kml/kmz file, a shapefile, a drawing or other file showing the limits for the area to be flown, please email the file(s) to cgr@uga.edu</p>
                       </small>
-                      <input name="files" type="file" accept=".kml, .kmz">
+                      <!-- <input name="files" type="file" accept=".kml, .kmz">
+						-->
                     </fieldset>
                   </div>
                 </div>
-              </div>
+              </div>				
               <div class="col-xl-15 mb-1">
                 <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
                   <div class="form-group pb-3">
@@ -272,13 +273,23 @@
                 <div class="col-12">
                   <textarea class="form-control border-primary bg-transparent" name="additionalComm" id="additionalComm" cols="30" rows="5" placeholder="comments"></textarea>
                 </div>
-              </div>
+              </div>				
+				
+				
               <div class="col-12">
                 <button type="submit" class="btn btn-light text-primary w-100 py-3 px-5">SUBMIT</button>
-              </div>
+              </div>				
             </div>
           </form>
         </div>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+        
       </div>
     </div>
   </div>
@@ -312,7 +323,7 @@
 <!-- Back to Top --> 
 <a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a> 
 
-<!-- Modal --> 
+<!-- Modal -->
 
 <div class="modal fade" id="infoRGB" tabindex="-1" aria-labelledby="infoRGBLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -384,9 +395,9 @@
     </div>
   </div>
 </div>
-	
+
 <!-- -->
-	
+
 <div class="modal fade" id="infoXS4" tabindex="-1" aria-labelledby="infoXS4Label" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -398,31 +409,27 @@
         <p class="mb-3">Geotagged multispectral images can be collected in lossless compressed format. Image acquisition possibilities include the camera and drone below:</p>
         <div class="row justify-content-center">
           <div class="col-lg-11">
-			  
             <div class="row mb-3 align-items-center">
               <div class="col-4 col-md-2 d-flex justify-content-center p-0"> <img src="img/ot/dji-mavic-3m.jpg" class="img-fluid rounded mx-auto" style="max-width: 100%; height: auto; object-fit: cover;" alt="Image"> </div>
               <div class="col-8 col-md-10 d-flex justify-content-between align-items-center"> <small>
-                
-				  <ul>
-          <li>5 MP multispectral camera</li>
-          <li>spectral regions: green, red, red edge, near infrared</li>
-          <li>images can be collected simultaneous to 20 MP RGB images</li>
-          <li>drone: DJI Mavic 3M</li>
-        </ul>
+                <ul>
+                  <li>5 MP multispectral camera</li>
+                  <li>spectral regions: green, red, red edge, near infrared</li>
+                  <li>images can be collected simultaneous to 20 MP RGB images</li>
+                  <li>drone: DJI Mavic 3M</li>
+                </ul>
                 </small> </div>
             </div>
           </div>
-		        <p class="mb-3">Collections include data from a downwelling radiation sensor and ground calibration panel.</p>
-        <a href="https://ag.dji.com/mavic-3-m/specs"  target="_blank" rel="noopener noreferrer" >Further sensor details (external link)</a> 	
-        </div>
+          <p class="mb-3">Collections include data from a downwelling radiation sensor and ground calibration panel.</p>
+          <a href="https://ag.dji.com/mavic-3-m/specs"  target="_blank" rel="noopener noreferrer" >Further sensor details (external link)</a> </div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</div>	
-	
+</div>
 <div class="modal fade" id="infoXS5" tabindex="-1" aria-labelledby="infoXS5Label" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -430,40 +437,35 @@
         <h4 class="modal-title" id="infoXS5Label">5-Band Multispectral Imagery</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-	  
       <div class="modal-body">
         <p class="mb-3">Geotagged multispectral images can be collected in lossless compressed format. Image acquisition possibilities include the camera and drone below:</p>
-		
-		
         <div class="row justify-content-center">
           <div class="col-lg-11">
-			  
             <div class="row mb-3 align-items-center">
               <div class="col-4 col-md-2 d-flex justify-content-center p-0"> <img src="img/ot/micasense-rededge-mx.jpg" class="img-fluid rounded mx-auto" style="max-width: 100%; height: auto; object-fit: cover;" alt="Image"> </div>
               <div class="col-8 col-md-10 d-flex justify-content-between align-items-center"> <small>
-				  
-				          <ul>
-          <li>Micasense RedEdge MX</li>
-          <ul>
-            <li>1.2 MP multispectral camera</li>
-            <li>spectral regions: blue, green, red, red edge, near infrared</li>
-            <li>drones: Freefly AltaX, DJI Matrice 600 Pro</li>
-          </ul>
-        </ul>
+                <ul>
+                  <li>Micasense RedEdge MX</li>
+                  <ul>
+                    <li>1.2 MP multispectral camera</li>
+                    <li>spectral regions: blue, green, red, red edge, near infrared</li>
+                    <li>drones: Freefly AltaX, DJI Matrice 600 Pro</li>
+                  </ul>
+                </ul>
                 </small> </div>
             </div>
           </div>
-		        <p class="mb-3">Collections include data from a downwelling radiation sensor and ground calibration panel.</p>
-        <a href="https://support.micasense.com/hc/en-us/articles/360011389334-RedEdge-MX-Integration-Guide" target="_blank" rel="noopener noreferrer" >Further sensor details (external link)</a> </div>
-        </div>
+          <p class="mb-3">Collections include data from a downwelling radiation sensor and ground calibration panel.</p>
+          <a href="https://support.micasense.com/hc/en-us/articles/360011389334-RedEdge-MX-Integration-Guide" target="_blank" rel="noopener noreferrer" >Further sensor details (external link)</a> </div>
+      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</div>	
+</div>
 
-<!---------------------------------------------------->
+<!----------------------------------------------------> 
 <!---------------------------------------------------->
 
 <div class="modal fade" id="infoXS10" tabindex="-1" aria-labelledby="infoXS10Label" aria-hidden="true">
@@ -473,42 +475,35 @@
         <h4 class="modal-title" id="infoXS10Label">10-Band Multispectral Imagery</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-	  
       <div class="modal-body">
         <p class="mb-3">Geotagged multispectral images can be collected in lossless compressed format. Image acquisition possibilities include the camera and drone below:</p>
-		
-		
         <div class="row justify-content-center">
           <div class="col-lg-11">
-			  
             <div class="row mb-3 align-items-center">
               <div class="col-4 col-md-2 d-flex justify-content-center p-0"> <img src="img/ot/micasense-rededge-p-dual.jpg" class="img-fluid rounded mx-auto" style="max-width: 100%; height: auto; object-fit: cover;" alt="Image"> </div>
               <div class="col-8 col-md-10 d-flex justify-content-between align-items-center"> <small>
-				  
-        <ul>
-          <li>Micasense RedEdge P Dual</li>
-          <ul>
-            <li>two multispectral cameras operating side-by-side</li>
-            <li>1.6 MP/band multispectral </li>
-            <li>5.1 MP panchromatic</li>
-            <li>10 spectral regions, including blue, green, red, red edge, near infrared</li>
-            <li>drones: Freefly AltaX, DJI Matrice 600 Pro</li>
-          </ul>
-        </ul>
+                <ul>
+                  <li>Micasense RedEdge P Dual</li>
+                  <ul>
+                    <li>two multispectral cameras operating side-by-side</li>
+                    <li>1.6 MP/band multispectral </li>
+                    <li>5.1 MP panchromatic</li>
+                    <li>10 spectral regions, including blue, green, red, red edge, near infrared</li>
+                    <li>drones: Freefly AltaX, DJI Matrice 600 Pro</li>
+                  </ul>
+                </ul>
                 </small> </div>
             </div>
           </div>
-        <p class="mb-3">Collections include data from a downwelling radiation sensor and a ground calibration panel.</p>
-        <a href="https://ageagle.com/drone-sensors/rededge-p-high-res-multispectral-camera/"  target="_blank" rel="noopener noreferrer" >Further sensor details (external link)</a> </div>
-        </div>
+          <p class="mb-3">Collections include data from a downwelling radiation sensor and a ground calibration panel.</p>
+          <a href="https://ageagle.com/drone-sensors/rededge-p-high-res-multispectral-camera/"  target="_blank" rel="noopener noreferrer" >Further sensor details (external link)</a> </div>
+      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</div>		
-
-	
+</div>
 <div class="modal fade" id="infoHS" tabindex="-1" aria-labelledby="infoHSLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -516,18 +511,13 @@
         <h4 class="modal-title" id="infoHSLabel">Hyperspectral Imagery</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-	  
       <div class="modal-body">
         <p class="mb-3">Geotagged hyperspectral images can be collected in lossless compressed format. Image acquisition possibilities include the camera and drone below:</p>
-		
-		
         <div class="row justify-content-center">
           <div class="col-lg-11">
-			  
             <div class="row mb-3 align-items-center">
               <div class="col-4 col-md-2 d-flex justify-content-center p-0"> <img src="img/ot/resonon-pika-l.jpg" class="img-fluid rounded mx-auto" style="max-width: 100%; height: auto; object-fit: cover;" alt="Image"> </div>
               <div class="col-8 col-md-10 d-flex justify-content-between align-items-center"> <small>
-				  
                 <ul>
                   <li>Resonon Pika-L</li>
                   <ul>
@@ -538,18 +528,18 @@
                 </small> </div>
             </div>
           </div>
-        <p class="mb-3">Collections include data from ground calibration panel.</p>
-        <a href="https://resonon.com/hyperspectral-airborne-remote-sensing-system"  target="_blank" rel="noopener noreferrer" >Further sensor details (external link)</a> </div>
-        </div>
+          <p class="mb-3">Collections include data from ground calibration panel.</p>
+          <a href="https://resonon.com/hyperspectral-airborne-remote-sensing-system"  target="_blank" rel="noopener noreferrer" >Further sensor details (external link)</a> </div>
+      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</div>	
-	
+</div>
+
 <!---------------------------------------------------->
-	
+
 <div class="modal fade" id="infoTIR" tabindex="-1" aria-labelledby="infoTIRLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -557,25 +547,20 @@
         <h4 class="modal-title" id="infoTIRLabel">Thermal Imagery</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-	  
       <div class="modal-body">
         <p class="mb-3">Geotagged thermal images can be collected in lossless compressed format. Image acquisition possibilities include the camera and drones below:</p>
-				
         <div class="row justify-content-center">
           <div class="col-lg-11">
-			  
             <div class="row mb-3 align-items-center">
               <div class="col-4 col-md-2 d-flex justify-content-center p-0"> <img src="img/ot/flir-duo-pro-r.jpg" class="img-fluid rounded mx-auto" style="max-width: 100%; height: auto; object-fit: cover;" alt="Image"> </div>
               <div class="col-8 col-md-10 d-flex justify-content-between align-items-center"> <small>
-				  
                 <ul>
                   <li>FLIR Duo Pro R</li>
                   <ul>
                     <li>640 x 512 pixelsn (thermal)</li>
                     <li>Radiometric</li>
-					  <li>12 MP (RGB)</li>
-					  <li>Drones: Freefly AltaX, DJI Matrice 600 Pro</li>
-					  
+                    <li>12 MP (RGB)</li>
+                    <li>Drones: Freefly AltaX, DJI Matrice 600 Pro</li>
                   </ul>
                 </ul>
                 </small> </div>
@@ -583,30 +568,25 @@
             <div class="row mb-3 align-items-center">
               <div class="col-4 col-md-2 d-flex justify-content-center p-0"> <img src="img/ot/autel-evo-ii-dual.jpg" class="img-fluid rounded mx-auto" style="max-width: 100%; height: auto; object-fit: cover;" alt="Image"> </div>
               <div class="col-8 col-md-10 d-flex justify-content-between align-items-center"> <small>
-				  
                 <ul>
                   <li>Autel EVO II Pro</li>
                   <ul>
                     <li>640 x 512 pixels (thermal)</li>
-					  <li>Non-radiometric</li>
-					  
+                    <li>Non-radiometric</li>
                     <li>48 MP (RGB)</li>
-					  
                   </ul>
                 </ul>
-				  
                 </small> </div>
-            </div>			  
+            </div>
           </div>
         </div>
-		</div>
+      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</div>	
-	
+</div>
 <div class="modal fade" id="infoLiDAR" tabindex="-1" aria-labelledby="infoLiDARLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -614,42 +594,37 @@
         <h4 class="modal-title" id="infoLiDARLabel">LiDAR Point Cloud</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-	  
       <div class="modal-body">
         <p class="mb-3">Geotagged LiDAR point cloud can be collected and stored using LAS/LAZ or other formats. Point cloud acquisition possibilities include the sensor and drone below:</p>
-		
-		
         <div class="row justify-content-center">
           <div class="col-lg-11">
-			  
             <div class="row mb-3 align-items-center">
               <div class="col-4 col-md-2 d-flex justify-content-center p-0"> <img src="img/ot/lidarusa-revolution120.jpg" class="img-fluid rounded mx-auto" style="max-width: 100%; height: auto; object-fit: cover;" alt="Image"> </div>
               <div class="col-8 col-md-10 d-flex justify-content-between align-items-center"> <small>
-				  
                 <ul>
                   <li>LiDAR USA Revolution 120</li>
                   <ul>
                     <li>300,000 Hz</li>
                     <li>3 returns</li>
-					  <li>Drone: Freefly AltaX</li>
+                    <li>Drone: Freefly AltaX</li>
                   </ul>
                 </ul>
                 </small> </div>
             </div>
           </div>
         </div>
-		</div>
+      </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
       </div>
     </div>
   </div>
-</div>	
-	
-<!---------------------------------------------------->	
+</div>
+
+<!----------------------------------------------------> 
 <!--
 ======================================================
--->
+--> 
 
 <!-- Modal Structure -->
 <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
