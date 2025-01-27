@@ -169,6 +169,113 @@
                   </div>
                 </div>
               </div>
+             <div class="col-xl-15">
+                <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
+                  <div class="form-group pb-3">
+                    <fieldset>
+                      <legend class="legend-small mb-2">Select image/data <strong>processing level</strong> and products you would like delivered to you:</legend>
+                      <small>
+                      <p>(click <a href="sensors.html" target="_blank" rel="noopener noreferrer">here</a> or click individual items below for information on deliverables).</p>
+                      </small>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="product[]" value="raw" id="prodRaw">
+                        <label class="form-check-label" for="prodRaw"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoRaw"> Raw values</a> </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="product[]" value="reflectance" id="prodCalRef">
+                        <label class="form-check-label" for="prodCalRef"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoCalRef"> Calibrated reflectance</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="product[]" value="temperature" id="prodTemp">
+                        <label class="form-check-label" for="prodTemp"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoTemp"> Temperature values</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="product[]" value="orthomosaic" id="prodOrtho">
+                        <label class="form-check-label" for="prodOrtho"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#inforOrtho"> Orthomosaic</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="product[]" value="classified image" id="prodClassImg">
+                        <label class="form-check-label" for="prodClassImg"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoClassImg"> Classified image</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="product[]" value="point cloud" id="prodPCloud">
+                        <label class="form-check-label" for="prodPCloud"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoPCloud"> Point cloud</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="product[]" value="DSM" id="prodDSM">
+                        <label class="form-check-label" for="prodDSM"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoDSM"> Digital surface model</a></label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="product[]" value="DEM" id="prodDEM">
+                        <label class="form-check-label" for="prodDEM"><a href="#" class="underline-hover text-primary" data-bs-toggle="modal" data-bs-target="#infoDEM"> Digital elevation model (bare-earth model)</a></label>
+                      </div>
+                      <div class="form-check mt-3">
+                        <input class="form-check-input" type="checkbox" name="product[]" value="other" id="prodOther">
+                        <label class="form-check-label" for="prodOther"> Other (use the Additional Comments area below to provide details)</label>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+				
+              <div class="col-xl-15 mb-1">
+                <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
+                  <div class="form-group pb-3">
+                    <fieldset>
+                      <legend class="legend-small mb-2">Provide the location where the collection needs to be conducted:</legend>
+                      <div class="col-12 mb-2">
+                        <textarea class="form-control border-primary bg-transparent" name="areaLocation" id="areaLocation" cols="30" rows="3" placeholder="location"></textarea>
+                      </div>
+                      <small>
+                      <p class="mb-2">If you have a kml/kmz file, a shapefile, a drawing or other file showing the limits for the area to be flown, please email the file(s) to cgr@uga.edu</p>
+                      </small>
+                      <!-- <input name="files" type="file" accept=".kml, .kmz">
+						-->
+                    </fieldset>
+                  </div>
+                </div>
+              </div>				
+              <div class="col-xl-15 mb-1">
+                <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
+                  <div class="form-group pb-3">
+                    <fieldset>
+                      <p class="mb-0">Please indicate date or period the collection needs to be conducted, including if multiple collections are needed:</p>
+                      <div class="col-12">
+                        <textarea class="form-control border-primary bg-transparent" name="datePeriod" id="datePeriod" cols="30" rows="3" placeholder="date/period"></textarea>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-15 mb-2">
+                <div class="rounded border border-primary bg-transparent p-4 py-3 shadow-sm">
+                  <div class="form-group pb-3">
+                    <fieldset>
+                      <legend class="legend-small mb-2">Please indicate if the collection requires a United States federally compliant drone (DoD Blue List):</legend>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="optionsBlueList" id="blueListYes" value="yes">
+                        <label class="form-check-label" for="option1">yes</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="optionsBlueList" id="blueListNo" value="no">
+                        <label class="form-check-label" for="option2">no</label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="optionsBlueList" id="blueListUnknown" value="unknown" checked>
+                        <label class="form-check-label" for="option3">unknown</label>
+                      </div>
+                    </fieldset>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-15 mb-1">
+                <p class="mb-0"><strong>Additional Comments</strong> (use the space below to provide any additional information or details your consider relevant to the drone data collection and the products you need).</p>
+                <div class="col-12">
+                  <textarea class="form-control border-primary bg-transparent" name="additionalComm" id="additionalComm" cols="30" rows="5" placeholder="comments"></textarea>
+                </div>
+              </div>				
+				
+				
               <div class="col-12">
                 <button type="submit" class="btn btn-light text-primary w-100 py-3 px-5">SUBMIT</button>
               </div>				
