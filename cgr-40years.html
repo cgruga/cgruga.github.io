@@ -34,6 +34,8 @@
 
 <!-- UGA footer Stylesheet -->
 <link rel="stylesheet" href="css/uga-footer.css" />
+
+
 	
 <style>
 .wrapper {
@@ -59,9 +61,13 @@
 	
 	
 .flipbook {
-  height: 100%;
+	/* height: 100%;*/
+
+	width: 800px;
+  height: 600px;
+	
   transition: margin-left 0.25s ease-out;
-  width: 100%;
+  /*width: 100%;*/
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -70,6 +76,8 @@
   user-select: none;
 }
 .flipbook .page {
+  display: block;
+	
   height: 100%;
   width: 100%;
 }
@@ -184,15 +192,30 @@
 		</script> 
 	
 <script> 
-	var flipbookEL = document.getElementById('flipbook');
-window.addEventListener('resize', function (e) {
-  flipbookEL.style.width = '';
-  flipbookEL.style.height = '';
-  $(flipbookEL).turn('size', flipbookEL.clientWidth, flipbookEL.clientHeight);
-});
-$(flipbookEL).turn({
-    autoCenter: true
-});
+	
+
+	
+	
+	
+	
+$(function () {
+  var $flipbook = $('#flipbook');
+  $flipbook.turn({
+    width: $flipbook.width(),
+    height: $flipbook.height(),
+    autoCenter: true,
+    elevation: 50,
+    gradients: true
+  });
+
+  // Responsive resizing
+  $(window).on('resize', function () {
+    $flipbook.turn('size', $flipbook.width(), $flipbook.height());
+  });
+});	
+	
+	
+	
 	</script>	
 <script>
     document.addEventListener('DOMContentLoaded', function() {
@@ -223,7 +246,7 @@ $(flipbookEL).turn({
 <!-- Template Javascript --> 
 <script src="js/main.js"></script>
 <script src="js/modal-handler.js"></script> <!-- Adjust the path as needed -->
-<script src="js/turn.js"></script> <!-- Adjust the path as needed -->	
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>	
 <script src="js/turn.min.js"></script> <!-- Adjust the path as needed -->	
 	
 </body>
