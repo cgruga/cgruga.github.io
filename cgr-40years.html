@@ -1,66 +1,230 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="js/turn.min.js"></script>
+<meta charset="utf-8">
+<title>Center for Geospatial Research</title>
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<meta content="research geography geographic information systems remote sensing drones" name="keywords">
+<meta content="Center for Geospatial Research" name="description">
+<meta content="Sergio Bernardes" name="author">
 
-<style type="text/css">
-body{
-	background:#ccc;
+<!-- Google Web Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+-->
+<link href="https://fonts.googleapis.com/css2? family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@400;500;600&family=Roboto:wght@100;300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+<!-- Icon Font Stylesheet -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css"/>
+<!--	
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+<!-- Libraries Stylesheet -->
+<link href="lib/animate/animate.min.css" rel="stylesheet">
+<link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+<!-- Customized Bootstrap Stylesheet -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Template Stylesheet -->
+<link href="css/style.css" rel="stylesheet">
+
+<!-- UGA footer Stylesheet -->
+<link rel="stylesheet" href="css/uga-footer.css" />
+	
+<style>
+.wrapper {
+  align-items: center;
+  display: flex;
+  height: 90%;
+  justify-content: center;
+  margin: 5%;
+  width: 90%;
 }
-#magazine{
-	width:1152px;
-	height:752px;
+.aspect {
+  padding-bottom: 70%;
+  position: relative;
+  width: 100%;
 }
-#magazine .turn-page{
-	background-color:#ccc;
-	background-size:100% 100%;
+.aspect-inner {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}	
+	
+	
+.flipbook {
+  height: 100%;
+  transition: margin-left 0.25s ease-out;
+  width: 100%;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
-#magazine div {
-      width: 576px;
-      height: 752px;
-    }	
-</style>
+.flipbook .page {
+  height: 100%;
+  width: 100%;
+}
+.flipbook .page img {
+  max-width: 100%;
+  height: 100%;
+}	
+	</style>	
+	
+	
+	
 </head>
+
 <body>
 
-<div id="magazine">
-	<div style="background-image:url(pages/01.jpg);"></div>
-	<div style="background-image:url(pages/02.jpg);"></div>
-	<div style="background-image:url(pages/03.jpg);"></div>
-	<div style="background-image:url(pages/04.jpg);"></div>
-	<div style="background-image:url(pages/05.jpg);"></div>
-	<div style="background-image:url(pages/06.jpg);"></div>
+<!-- Spinner Start -->
+<div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+  <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status"> <span class="sr-only">Loading...</span> </div>
+</div>
+<!-- Spinner End --> 
+
+<!-- Navbar & Hero Start -->
+<div class="container-fluid position-relative p-0"> 
+  
+  <!-- Start navigation bar -->
+  <div id="nav-placeholder"></div>
+  <!-- End navigation bar --> 
+  
+</div>
+<!-- Navbar End --> 
+
+<!-- Header Start -->
+<div class="container-fluid bg-breadcrumb" style="background-image: url('img/1920x1080/lrms-1984.jpg')">
+  <div class="overlay"></div>
+  <!-- Overlay for better text contrast -->
+  <div class="container text-center py-5" style="max-width: 900px;">
+    <h4 class="text-center text-white display-5 mb-2 wow fadeIn" data-wow-delay="0.5s">Our History</h4>
+    <h5 class="text-start text-white wow fadeIn" data-wow-delay="0.3s"></h5>
+  </div>
 </div>
 
+<!-- Header End -->
 
-<script type="text/javascript">
-
-	$(window).ready(function() {
-		$('#magazine').turn({
-							display: 'double',
-							acceleration: true,
-							gradients: !$.isTouch,
-							elevation:50,
-							when: {
-								turned: function(e, page) {
-									/*console.log('Current view: ', $(this).turn('view'));*/
-								}
-							}
-						});
-	});
-	
-	
-	$(window).bind('keydown', function(e){
+<div class="wrapper">
+  <div class="aspect">
+    <div class="aspect-inner">
 		
-		if (e.keyCode==37)
-			$('#magazine').turn('previous');
-		else if (e.keyCode==39)
-			$('#magazine').turn('next');
-			
-	});
+		<div class="flipbook" id="flipbook">
+  <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/01.jpg" draggable="false" alt="" /></div>
+  <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/02.jpg" draggable="false" alt="" /></div>
+  <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/03.jpg" draggable="false" alt="" /></div>
+  <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/04.jpg" draggable="false" alt="" /></div>
+  <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/05.jpg" draggable="false" alt="" /></div>
+  <div class="page"><img src="https://raw.github.com/blasten/turn.js/master/demos/magazine/pages/06.jpg" draggable="false" alt="" /></div>
+</div>
+		
+		
+		
+    </div>
+  </div>
+</div>
+	
+	
+	
 
-</script>
+	
+	
+	
+	
 
+
+<!-- Footer Start -->
+<div id="foot-placeholder"> </div>
+<!-- Footer End --> 
+
+<!-- Back to Top --> 
+<a href="#" class="btn btn-primary btn-lg-square back-to-top"><i class="fa fa-arrow-up"></i></a> 
+	
+<!-- Modal Structure -->
+<div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header"> 
+        <!--
+<h5 class="modal-title" id="imageModalLabel">Image and Caption</h5>
+-->
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center"> <img src="" id="modalImage" class="img-fluid rounded mb-3" alt="Modal Image">
+        <p id="modalCaption"></p>
+      </div>
+    </div>
+  </div>
+</div>	
+
+<!-- JavaScript Libraries --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> 
+<script src="lib/wow/wow.min.js"></script> 
+<script src="lib/easing/easing.min.js"></script> 
+<script src="lib/waypoints/waypoints.min.js"></script> 
+<script src="lib/owlcarousel/owl.carousel.min.js"></script> 
+<script>
+			$.get("navigation.html", function(data){
+				$("#nav-placeholder").replaceWith(data);
+			});
+		</script> 
+<script>
+			$.get("footer.html", function(data){
+				$("#foot-placeholder").replaceWith(data);
+			});
+		</script> 
+	
+<script> 
+	var flipbookEL = document.getElementById('flipbook');
+window.addEventListener('resize', function (e) {
+  flipbookEL.style.width = '';
+  flipbookEL.style.height = '';
+  $(flipbookEL).turn('size', flipbookEL.clientWidth, flipbookEL.clientHeight);
+});
+$(flipbookEL).turn({
+    autoCenter: true
+});
+	</script>	
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var path = window.location.pathname;
+        var page = path.split("/").pop();
+
+        // Remove active class from all nav links
+        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+        navLinks.forEach(function(link) {
+            link.classList.remove('active');
+        });
+
+        // Loop through nav links and set the active class
+        navLinks.forEach(function(link) {
+            var href = link.getAttribute('href');
+            if (href === page) {
+                link.classList.add('active');
+
+                // If it's a dropdown item, also add the active class to the parent dropdown
+                var parentDropdown = link.closest('.nav-item.dropdown');
+                if (parentDropdown) {
+                    parentDropdown.querySelector('.nav-link.dropdown-toggle').classList.add('active');
+                }
+            }
+        });
+    });
+</script> 
+<!-- Template Javascript --> 
+<script src="js/main.js"></script>
+<script src="js/modal-handler.js"></script> <!-- Adjust the path as needed -->
+<script src="js/turn.js"></script> <!-- Adjust the path as needed -->	
+<script src="js/turn.min.js"></script> <!-- Adjust the path as needed -->	
+	
 </body>
 </html>
