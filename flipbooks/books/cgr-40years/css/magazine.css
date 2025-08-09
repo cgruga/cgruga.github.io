@@ -186,7 +186,8 @@ body{
 .thumbnails > div{
 	width:1050px;
 	height:100px;
-	margin:20px auto;
+	/*margin:20px auto; */
+	margin:5px auto;
 }
 
 .thumbnails ul{
