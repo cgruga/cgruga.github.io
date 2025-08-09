@@ -1,6 +1,6 @@
 [{
 	"x":120,
-	"y":195,
+	"y":193,
 	"width":300,
 	"height":20,
 	"class":"to-page",
@@ -11,7 +11,7 @@
 },
 {
 	"x":120,
-	"y":220,
+	"y":219,
 	"width":300,
 	"height":20,
 	"class":"to-page",
@@ -33,7 +33,7 @@
 },
 {
 	"x":120,
-	"y":270,
+	"y":271,
 	"width":300,
 	"height":20,
 	"class":"to-page",
@@ -42,7 +42,32 @@
 			"page": 6
 		}
 
+},
+{
+	"x":120,
+	"y":297,
+	"width":300,
+	"height":20,
+	"class":"to-page",
+	"data":
+		{
+			"page": 8
+		}
+
+},
+{
+	"x":120,
+	"y":323,
+	"width":300,
+	"height":20,
+	"class":"to-page",
+	"data":
+		{
+			"page": 10
+		}
+
 }]
+
 
 
 
